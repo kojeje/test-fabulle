@@ -1,0 +1,509 @@
+{% extends 'base.twig' %}
+
+{% block tmp_slide %}
+<!-- SLIDER -->
+    {# Si Slider existe#}
+    {% if post.get_field('field_5cb8ecc79f5cc') == true %}
+        <!-- IMAGES 1265 X 550 -->
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
+            <div class="carousel-caption d-none d-md-block caption caption2">
+                <div class="row">
+                    <img src="{{ theme.link }}/assets/img/fabulle_spectacles_enfants.png" class="col-4" alt="">
+                </div>
+                {{ post.get_field('field_5cb8c1272895d') }}
+                <!-- BOUTONS SCROLL-->
+                <a href="#article-anch" class="anch">
+                    <div class="button button-h">
+                        <p>
+                            <i class="fas fa-chevron-down"></i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-inner">
+                {# img 1#}
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ post.get_field('field_5cb8bfb17ce20') }}" alt="First slide">
+                </div>
+                {# img 2#}
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ post.get_field('field_5cb8c028c1240') }}" alt="Second slide">
+                </div>
+                {# img 3#}
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0507b0c6') }}" alt="Third slide">
+                </div>
+                {# img 1#}
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0607b0c7') }}" alt="Fourth slide">
+                </div>
+                {# Si img4 existe #}
+                {% if post.get_field('field_5cb8c0607b0c7') %}
+                    {# img 5#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0867b0c8') }}" alt="Fifth slide">
+                    </div>
+                {% endif %}
+                {# Si img5 existe #}
+                {% if post.get_field('field_5cb8c0867b0c8') %}
+                    {# img 6#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0ac7b0c9') }}" alt="sixth slide">
+                    </div>
+                {% endif %}
+                {# Si img6 existe #}
+                {% if post.get_field('field_5cb8c0ac7b0c9') %}
+                    {# img 7#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0c47b0ca') }}" alt="seventh slide">
+                    </div>
+                {% endif %}
+                {# Si img7 existe #}
+                {% if post.get_field('field_5cb8c0c47b0ca') %}
+                    {# img 8#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0e07b0cb') }}" alt="eighth slide">
+                    </div>
+                {% endif %}
+                {# Si img8 existe #}
+                {% if post.get_field('field_5cb8c0e07b0cb') %}
+                    {# img 9#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c0f47b0cc') }}" alt="ninth slide">
+                    </div>
+                {% endif %}
+                {# Si img9 existe #}
+                {% if post.get_field('field_5cb8c0f47b0cc') %}
+                    {# img 10#}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ post.get_field('field_5cb8c10a7b0cd') }}" alt="tenth slide">
+                    </div>
+                {% endif %}
+
+            </div>
+
+            <!-- BOUTONS -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+    {% endif %}
+{% endblock %}
+{% block content %}
+<!-- CORPS DE LA PAGE -->
+    {# accueil #}
+<a id="article-anch" class="anch d-none d-md-block"></a>
+<div class="article-loop article-loop2 w-100 m-a" id="article-loop">
+    <div class="row cpost-type-{{post.post_type}}" id="post-{{post.ID}}">
+
+         {#Slogan smartphones#}
+        {% include '/views/partial/slogan-phone.twig' %}
+        {# ------------ SECTION 1 ---------------------------------------- #}
+        <section class="article-content home loop row back-home parallax2">
+            {# Si il y a des dates à afficher#}
+            {% if events %}
+                {#ACCUEIL#}
+                <div class="col-12 col-md-5 row loop event-list2">
+                    {#TITRE#}
+                    <div class="offset-md-1 d-none d-md-block"></div>
+                    <h2 class="active#66ccff titre-page col-12 col-md-8 flex-h1 h1-event-list">
+                        <i class=" fas fa-home-lg"> </i> ACCUEIL
+                    </h2>
+                    {#CONTENU#}
+                    <div class="event-home-date-block d-md-none offset-1"></div>
+                    <div class="home-post col-10">
+                        <h3 class="article-sub-h1 link linkZ titre-page2 ">{{ post.get_field('sub1') }}</h3>
+
+                        <img src="{{ post.thumbnail.src }}" class="float-thumb m-a" alt="Image pour {{ post.title}}">
+                        {{ post.content }}
+                    </div>
+
+                    {# => Balise suivante#}
+                    <a href="#article-anch{% if actus %}2{% elseif shows %}3{% endif %}" class="col-md-12 d-none d-md-block">
+                        <div class="button button2 button3">
+                            <p><i class="fas fa-chevron-down"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="offset-md-1 d-none d-md-block"></div>
+                {#Prochaine date#}
+                {% include '/views/partial/loops/one-event-loop.twig' %}
+
+                <div class="offset-md-1 d-none d-md-block"></div>
+                {#Sinon#}
+            {% else %}
+                <div class="offset-md-1 d-none d-md-block"></div>
+                {#ACCUEIL#}
+                <div class="col-12 col-md-4 row event-list2 flex-title-bloc">
+                    {#TITRE#}
+                    <h2 class="active#66ccff titre-page col-12 col-md-8 flex-h1 h1-event-list" >
+                        <i class=" fas fa-home-lg"> </i> ACCUEIL
+                    </h2>
+                    {# CONTENU#}
+                    <div class="event-home-date-block d-md-none offset-1"></div>
+                    <div class="home-post col-10">
+                        <h3 class="article-sub-h1 link linkZ titre-page2 ">{{ post.get_field('sub1') }}</h3>
+
+                        <img src="{{ post.thumbnail.src }}" class="float-thumb m-a" alt="Image pour {{ post.title}}">
+                        {{ post.content }}
+                    </div>
+                    {# => Balise suivante#}
+                    <a href="#article-anch{% if actus %}2{% elseif shows %}3{% endif %}" class="col-md-12 d-none d-md-block">
+                        <div class="button button2 button3">
+                            <p><i class="fas fa-chevron-down"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-block d-md-none">
+                    {# séparateur #}
+                    {# {% include '/views/partial/separation.twig' %} #}
+
+                </div>
+                {# VIDEO#}
+                <div class="offset-md-1 d-none d-md-block"></div>
+                {% include '/views/partial/video2.twig' %}
+            {% endif %}
+
+
+        </section>
+
+        {# séparateur #}
+        {% include '/views/partial/separation.twig' %}
+        {% if actus %}
+        {# ------------ SECTION 2 ---------------------------------------- #}
+        <a class="col-12 d-none d-md-block" id="article-anch2"></a>
+        <section class="article-content home row loop row-eq-height ptit_mot-inc parallax2">
+            {# Si il y a des dates à afficher#}
+            {% if events %}
+                <div class="offset-md-1 d-none d-md-block"></div>
+                {% include '/views/partial/loops/1actu.twig' %}
+                <div class="d-none d-md-block d-lg-none offset-md-1"></div>
+                {% include '/views/partial/video.twig' %}
+            {% else %}
+                {% include '/views/partial/loops/1actu-row.twig' %}
+            {% endif %}
+
+        </section>
+
+        {# séparateur #}
+        {% include '/views/partial/separation.twig' %}
+        {% endif %}
+        {# ------------ SECTION 3 ---------------------------------------- #}
+        {% if shows %}
+            <a class="col-md-12 d-lg-block d-none" id="article-anch3"></a>
+            <section class="article-loop article-loop2 back-show parallax2 row m-a w-100">
+                <div class="title-bloc col-12">
+                    <h2 class="col-10 col-md-6 m-a active#ffcc33 titre-page event-list2 article-h1 under-title h1-event-list a-l-affiche">
+                            <i class="fas fa-star"></i> A L'AFFICHE
+                    </h2>
+                </div>
+                {% include '/views/partial/loops/show-loop.twig' %}
+
+            </section>
+        {% endif %}
+        {# séparateur #}
+        {% include '/views/partial/separation.twig' %}
+
+        {# ------------ SECTION 4 ---------------------------------------- #}
+        
+        {% if events %}
+            <a id="article-anch4" class="d-none d-md-block"></a>
+            <section class="parallax2" id="home-event" >
+                {% include '/views/partial/loops/event-loop.twig' %}
+            </section>
+            <a href="#article-anch5" class="col-md-12 d-none d-md-block">
+                <div class="button button2 button3">
+                    <p><i class="fas fa-chevron-down"></i></p>
+                </div>
+            </a>
+        
+            <a href="#article-anch2" class="col-md-12 d-none d-md-block">
+
+                <div class="button button2 button3">
+                    <p><i class="fas fa-chevron-down"></i></p>
+                </div>
+            </a>
+
+            {# séparateur #}
+            {% include '/views/partial/separation.twig' %}
+        {% endif %}
+        {# ------------ SECTION 5 ---------------------------------------- #}
+        <section class="row loop">
+            {# modifier balise interne en fonction de la presence d'évènement #}
+            {% if events %}
+                <a class="col-md-12 d-lg-block d-none" id="article-anch5"></a>
+            {% else %}
+                <a class="col-md-12 d-lg-block d-none" id="article-anch4"></a>
+            {% endif %}
+            {# Tant qu'ily a des pages #}
+            {% for cie in cies %}
+                {# dont l'id est 39 id#}
+                {% if cie.id == 39 %}
+                    {# lien vers la page 'la cie'#}
+                    <a href="{{ cie.link }}" class="bloc-title bloc-title2 row ">
+                        <div class="offset-1"></div>
+                        {# contenu choisi de la page à afficher dans le bloc #}
+
+                        {# Bloc text img 1 #}
+                        <div class="col-12 loop col-md-6 row">
+                            {# Titre #}
+                            <h1 class="active#ff6633 titre-page article-h1 under-title loop-title loop-title2 ">
+                                <i class="fas fa-circle"></i>
+                                {{ cie.title|upper }}
+                            </h1>
+                            <div class="offset-md-1 d-none d-lg-block"></div>
+                            {# texte et image#}
+                            <div class="thumb home-post col-11 ">
+                                <img class="float-thumb img50" src="{{ cie.thumbnail.src }}" alt="image de {{ cie.title }}">
+                                {{ cie.content }}
+
+                            </div>
+                        </div>
+                        {# Bloc text img 2 #}
+                        {#<div class="offset-md-1 d-none d-md-block"></div>#}
+                        <div class="col-12 loop col-md-5">
+                            {# Titre #}
+                            <h1 class="active#ff6633  titre-page2 article-h1 under-title loop-title loop-title2 ">
+                                <i class="fas fa-circle"></i>
+                                {{ cie.get_field('subtitle') }}</h1>
+                            <div class="offset-md-1 d-none d-lg-block"></div>
+                            {# texte et image#}
+                            <p class="home-post thumb col-11 cie-text">
+                                <img class="float-thumb2 " src="{{ cie.get_field('imgalt') }}" alt="image de {{ cie.title }}">
+                                {{ cie.textalt }}
+
+                            </p>
+                        </div>
+                        <div class="offset-md-2 d-none d-md-block"></div>
+
+                    </a>
+                    {# modifier lien vers balise interne en fonction de la presence d'évènement #}
+                    {% if events %}
+                        <a href="#article-anch6" class="col-md-12 d-none d-md-block">
+                            <div class="button button2 button3">
+                                <p><i class="fas fa-chevron-down"></i></p>
+                            </div>
+                        </a>
+                    {% else %}
+                        <a href="#article-anch5" class="col-md-12 d-none d-md-block">
+                            <div class="button button2 button3">
+                                <p><i class="fas fa-chevron-down"></i></p>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {# séparateur #}
+
+        </section>
+
+        {# ------------ SECTION 6 - Newsletter contact ---------------------------------------- #}
+        {% if events %}
+            <a class="col-md-12 d-lg-block d-none" id="article-anch6"></a>
+        {% else %}
+            <a class="col-md-12 d-lg-block d-none" id="article-anch5"></a>
+        {% endif %}
+        <h1 class="article-h1 col-12">Contact/Newsletters</h1>
+        <div class="offset-5"></div>
+        {% for contact in contacts if contact.id == 916 %}
+            <div class="col-2"><img src="https://www.kojeje.fr/fabulle/wp-content/uploads/2019/09/fabulle-bleue.png" alt="Ca c'est Fabulle qui vous écrit {{ post.title }}"></div>
+            <div class="offset-5"></div>
+            <div class="offset-md-2 d-none d-md-block"></div>
+            <section class="col-12 col-md-4 row">
+                <div class="offset-3"></div>
+                <div class="offset-3"></div>
+                {{ '[mailpoet_form id="3"]'|shortcodes }}
+            </section>
+            <div class="offset-md-1 d-none d-md-block"></div>
+            <section class="col-12 col-md-4">
+                    <section class="form col-md-12">
+                        <p>
+                            <i>
+                                Écrivez à <span class="article-sub-h1">Fabulle</span>  !...
+                                <br>
+                                Envie de partager ? Un dessin? Un petit mot gentil ?
+                                <br>
+                                C'est ici!
+                            </i>
+                        </p>
+                        {{ contact.get_field('code_court_cie')|shortcodes }}
+                    </section>
+
+            </section>
+            <div class="offset-md-3 d-none d-md-block"></div>
+            <section class="id col-12 col-md-6">
+                <div class="row container m-a">
+                    {# ancre interne #}
+                    <a id="article-anch" class="anch"></a>
+                    {% for contact in contacts if contact.get_field('type_de_contact') == 'prod'
+                        and post.get_field('contact').id == contact.id
+                    %}
+                        {# Entete #}
+
+                        {# Titre #}
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                        <div class="col-12 col-md-5 coordonnees row">
+                            <div class="active#c90089 contact-title">
+                                <h1>Contact</h1>
+                            </div>
+                            {#Sous-titre#}
+                            <h2 class="t-a-center col-12">Booking</h2>
+                            {% if contact.get_field('logo_prod') %}
+                                <div class="offset-2"></div>
+                                <div class="logo2 col-8">
+                                    <img src="{{ contact.get_field('logo_prod') }}" alt="logo de {{ contact.get_field('nom_prod') }}">
+                                </div>
+
+                                <div class="offset-2"></div>
+                            {% endif %}
+                            {# Raiso sociale #}
+                            <div class="offset-1"></div>
+                            <p class="col-10 article-sub-h1">{{ contact.get_field('nom_prod') }}</p>
+                            <div class="offset-1"></div>
+                            {# Adresse #}
+                            <p class="col-12 t-a-center">{{ contact.get_field('adresse') }}</p>
+                            {# CP + Commune #}
+                            <p class="col-12 t-a-center">
+                                <span>{{ contact.get_field('cp') }}</span> <strong class="link5">{{ contact.get_field('commune') }}</strong>
+                            </p>
+                            {# tel fixe #}
+                            {% if contact.get_field('telephone_fixe') %}
+                                <div class="offset-2"></div>
+                                <p class=" d-flex justify-content-around col-8">
+                                    <i class="fal fa-phone"></i>
+                                    <span class="m-a d-block"> +33 {{ contact.get_field('telephone_fixe') }}</span>
+                                </p>
+                                <div class="offset-2"></div>
+                            {% endif %}
+                            {# tel mobile #}
+                            {% if contact.get_field('telephone_mobile') %}
+                                <div class="offset-2"></div>
+                                <p class=" d-flex justify-content-around col-8">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="m-a d-block">+33 {{ contact.get_field('telephone_mobile') }}</span>
+                                </p>
+                                <div class="offset-2"></div>
+                            {% endif %}
+                            {# site web#}
+                            {% if contact.get_field('url') %}
+                                <p class="col-12 t-a-center ad ad2 url">
+                                    <a href="{{ contact.get_field('url') }}" target="_blank">site web</a>
+                                </p>
+                            {% endif %}
+                            {# map #}
+                            {% if contact.get_field('map_prod') %}
+                                <div class="col-12">
+                                    {{ contact.get_field('map_prod') }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="form col-12 col-md-5">
+                            {# Entete #}
+                            <p>
+                                <i>
+                                    Pour faire venir
+                                    {% if post.post_type == 'spectacles' %}
+                                        <br>
+                                        <span class="article-sub-h1">
+                                        "{{ post.title }}"
+                                    </span>
+                                    {% elseif post.post_type != 'spectacles' %}
+                                        un spectacle de
+                                        <span class="article-sub-h1">
+                                        Fabulle et cie
+                                    </span>
+                                    {% endif %}
+                                    , demander un devis, et toute question relative à la facturation...
+                                    <br>
+                                    C'est ici!
+                                </i>
+                            </p>
+                            {# formulaire#}
+                            {{ contact.get_field('code_court_prod')|shortcodes }}
+                        </div>
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                    {% endfor %}
+                    {% for contact in contacts if contact.get_field('type_de_contact') == 'cie'
+                        and post.get_field('contact').id == contact.id
+                    %}
+
+                        {# Contact#}
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                        <div class="row col-12 col-md-5 coordonnees">
+                            <div class="active#c90089 contact-title">
+                                <h1>Contact</h1>
+                            </div>
+                            <div class="col-12"><img src="{{ contact.thumbnail.src }}" alt="logo de Fabulle et cie"></div>
+
+
+
+                            <div class="offset-1"></div>
+                            <p class="t-a-center col-10">{{ contact.get_field('adresse_cie') }}</p>
+                            <div class="offset-1"></div>
+                            <div class="offset-1"></div>
+                            <p class="t-a-center col-10">
+                                <span>{{ contact.get_field('cp_cie') }}</span> <strong class="link5">{{ contact.get_field('commune_cie') }}</strong>
+                            </p>
+                            <div class="offset-1"></div>
+                            {% if contact.get_field('telephone_fixe_cie') %}
+                                <div class="offset-1"></div>
+                                <p class=" d-flex justify-content-around col-10">
+                                <span class="m-a d-block">
+                                <i class="fas fa-mobile-alt"></i>
+                                +33 {{ contact.get_field('telephone_fixe_cie') }}</span>
+                                </p>
+                                <div class="offset-1"></div>
+                            {% endif %}
+                            {% if contact.get_field('telephone_mobile_cie') %}
+                                <div class="offset-1"></div>
+                                <p class=" d-flex justify-content-around col-10">
+                                <span class="m-a d-block">
+                                <i class="fas fa-mobile-alt"></i>
+                                +33 {{ contact.get_field('telephone_mobile_cie') }}
+                                </span>
+                                </p>
+                                <div class="offset-1"></div>
+                            {% endif %}
+                        </div>
+                        <div class="form col-12 col-md-5">
+                            <p>
+                                <i>
+                                    Écrivez à <span class="article-sub-h1">Fabulle</span>  !...
+                                    <br>
+
+                                    Une question sur
+                                    <br>
+                                    <a href="{{ site.url }}les-spectacles/">
+                                        <span class="article-sub-h1">un de nos spectacles</span>
+                                    </a>
+                                    <br>
+                                    Une interrogation technique?
+                                    <br>
+                                    Envie de partager ? Un dessin? Un petit mot gentil ?
+
+                                    <br>
+                                    C'est ici!
+                                </i>
+                            </p>
+                            {{ contact.get_field('code_court_cie')|shortcodes }}
+                        </div>
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                    {% endfor %}
+                </div>
+            </section>
+            <div class="offset-md-3 d-none d-md-block"></div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+
+

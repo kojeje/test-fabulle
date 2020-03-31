@@ -1,0 +1,362 @@
+{% extends 'base.twig' %}
+{% block content %}
+ 
+
+    <a id="article-anch"></a>
+    <article class="t4 content-wrapper article_content" xmlns="http://www.w3.org/1999/html">
+        <div class="post-type-{{post.post_type}} row" id="post-{{post.ID}}">
+            <div class="bloc-title bloc-title2 row ">
+                <div class="offset-md-1 d-none d-lg-block"></div>
+                <div class="thumb col-12 col-lg-4 mt30">
+                    <img src="{{ post.thumbnail.src }}" alt="image de {{ post.title }}">
+                    <a href="{% if post.get_field('text1') %}#article-anch2{% else %}#article-ere {% endif %}" class="flex-btn">
+                        <div class="button button2 button3">
+                            <p><i class="fas fa-chevron-down"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="title-bloc col-12 col-lg-6">
+                    <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.title }}</h1>
+                    <p>{{ post.content }}</p>
+                </div>
+            </div>
+            {% if post.get_field('text1') %}
+                <a id="article-anch2"></a>
+                <div class="row t4">
+                    <div class="offset-md-1 d-none d-lg-block"></div>
+                    <div class="title-bloc col-12 col-lg-6">
+                        <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub1') }}</h1>
+                        <p>{{ post.get_field('text1') }}</p>
+                        <a href="{% if post.get_field('text2') %}#article-anch3{% elseif periodes %}#article-ere{% elseif membres %}#article-membres{% endif %}" class="flex-btn">
+                            <div class="button button2 button3">
+                                <p><i class="fas fa-chevron-fas fa-chevron-{% if post.get_field('text2') or periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="thumb col-12 col-lg-4 mt30">
+                        <img src="{{ post.get_field('img_1') }}" alt="image de {{ post.title }}">
+                    </div>
+                </div>
+                {% if post.get_field('text2') %}
+                    <a id="article-anch3"></a>
+                    <div class="row">
+                        <div class="offset-md-1 d-none d-lg-block"></div>
+                        <div class="thumb col-12 col-lg-4 mt30">
+                            <img src="{{ post.get_field('img_2') }}" alt="image de {{ post.title }}">
+                        </div>
+                        <div class="title-bloc col-12 col-lg-6">
+                            <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub2') }}</h1>
+                            <p>{{ post.get_field('text2') }}</p>
+                            <a href="{% if post.get_field('text3') %}#article-anch4{% elseif periodes %}#article-ere{% elseif membres %}#article-membres{% endif %}" class="flex-btn">
+                                <div class="button button2 button3">
+                                    <p><i class="fas fa-chevron-fas fa-chevron-fas fa-chevron-{% if post.get_field('text3') or periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    {% if post.get_field('text3') %}
+                        <a id="article-anch4"></a>
+                        <div class="row">
+                            <div class="offset-md-1 d-none d-lg-block"></div>
+                            <div class="title-bloc col-12 col-lg-6">
+                                <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub3') }}</h1>
+                                <p>{{ post.get_field('text3') }}</p>
+                                <a href="{% if post.get_field('text4') %}#article-anch5{% elseif periodes %}#article-ere{% elseif membres %}#article-membres{% endif %}" class="flex-btn">
+                                    <div class="button button2 button3">
+                                        <p><i class="fas fa-chevron-fas fa-chevron-fas fa-chevron-{% if post.get_field('text4') or periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="thumb col-12 col-lg-4 mt30">
+                                <img src="{{ post.get_field('img_3') }}" alt="image de {{ post.title }}">
+
+                            </div>
+                        </div>
+                        {% if post.get_field('text4') %}
+                            <a id="article-anch5"></a>
+                            <div class="row">
+                                <div class="offset-md-1 d-none d-lg-block"></div>
+                                <div class="thumb col-12 col-lg-4 mt30">
+                                    <img src="{{ post.get_field('img_4') }}" alt="image de {{ post.title }}">
+                                </div>
+                                <div class="title-bloc col-12 col-lg-6">
+                                    <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub4') }}</h1>
+                                    <p>{{ post.get_field('text4') }}</p>
+                                    <a href="{% if post.get_field('text') %}#article-anch6{% elseif periodes %}#article-ere{% elseif membres %}#article-membres{% endif %}" class="flex-btn">
+                                        <div class="button button2 button3">
+                                            <p><i class="fas fa-chevron-fas fa-chevron-fas fa-chevron-{% if post.get_field('text5') or periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            {% if post.get_field('text5') %}
+                                <a id="article-anch6"></a>
+                                <div class="row">
+                                    <div class="offset-md-1 d-none d-lg-block"></div>
+                                    <div class="title-bloc col-12 col-lg-6">
+                                        <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub5') }}</h1>
+                                        <p>{{ post.get_field('text5') }}</p>
+                                         <a href="{% if post.get_field('text6') %}#article-anch7{% elseif periodes %}#article-ere{% elseif membres %}#article-membres{% endif %}" class="flex-btn">
+                                            <div class="button button2 button3">
+                                                <p><i class="fas fa-chevron-down{% if post.get_field('text6') or periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumb col-12 col-lg-4 mt30">
+                                        <img src="{{ post.get_field('img_5') }}" alt="image de {{ post.title }}">
+                                    </div>
+                                </div>
+                                {% if post.get_field('text6') %}
+                                    <a id="article-anch7"></a>
+                                    <div class="row">
+                                        <div class="offset-md-1 d-none d-lg-block"></div>
+                                        <div class="title-bloc col-12 col-lg-6">
+                                            <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title loop-title loop-title2">{{ post.get_field('sub6') }}</h1>
+                                            <p>{{ post.get_field('text6') }}</p>
+                                            <a href="{% if periodes %}#article-ere{% elseif membres %}#article-membres{% else %}#article-anch{% endif %}" class="flex-btn">
+                                                <div class="button button2 button3">
+                                                    <p><i class="fas fa-chevron-{% if periodes or membres %}down{% else %}up{% endif %}"></i></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumb col-12 col-lg-4 mt30">
+                                            <img src="{{ post.get_field('img_6') }}" alt="image de {{ post.title }}">
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+            {% if periodes %}
+            <div class="offset-md-1 d-none d-lg-block"></div>
+            <div class="offset-md-1 d-none d-lg-block"></div>
+                <div class="row col-lg-10">
+                    <a id="article-ere" class="anch col-12 d-none d-md-block"></a>
+                    <h1 class="t-lg-11 t10 active#ff6633 article-h1 under-title loop-title loop-title2">La petite histoire</h1>
+                    {% for ere in periodes %}
+                        <section class="row col-12">
+                            {# si loop.index impair #}
+                            {% if loop.index%2 != 0 %}
+                                {% if loop.index != 1 %}
+                                    <a id="article-ere{{ loop.index }}" class="anch col-12 d-none d-md-block"></a>
+                                {% endif %}
+                                {# bloc image + date au survol #}
+                                <div class="col-12 col-md-12 t3 row mt-10">
+                                    {#image#}
+                                    <div class="col-12 col-md-5 row">
+                                        <img src="{{ ere.get_field('image') }}" alt="photo de {{ site.url }}" class="col-8 col-md-12 shadow  m-a img mt30">
+                                    </div>
+                                     {#titre période #}
+                                    <div class="row col-12 col-md-5 t4 ">
+                                        <h2 class="t-lg-8 t7 col-md-12 col-12 white">
+                                            <span class="white t-a-center">
+                                                {{ere.title|capitalize }}
+                                            </span>
+                                        </h2>
+                                        {# date #}
+                                        <div class="col-12 salle t3 ">
+                                            <h3 class="t-lg-5 t-5 p20 bk3 article-h3 t-a-center">
+                                                {#date de début#}
+                                                <span class="color8 mr10">{{ ere.get_field('debut') }}</span>
+                                                {# si date de fin #}
+                                                {% if ere.get_field('fin') %}
+                                                    {# affichage de la date de fin de période #}
+                                                    <span class="color8"> - {{ ere.get_field('fin') }}</span>
+                                                {# si période en cours (pas de date de fin et mention "à nos jours" cochée"#}
+                                                {% elseif ere.get_field('mention') == true and ere.get_field('fin') == null %}
+                                                    à nos jours
+                                                {% endif %}
+                                            </h3>
+                                        </div>
+                                        {# texte #}
+                                        <p class="toile">
+                                            {{ ere.get_field('texte_1') }}
+                                        </p>
+                                        {# lien vers section suivante #}
+                                        {# Si période à suivre #}
+                                        {% if loop.index != loop.last %}
+                                            {# lien vers période suivante #}
+                                            <a href="#article-ere{{ loop.index + 1 }}" class="anch m-a">
+                                                <div class="button button-h t-a-center mt30 ">
+                                                    <span class="white">
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            {# si dernière période #}
+                                        {% elseif loop.index == loop.last %}
+                                            <a href="#article-{% if membres %}membres{% elseif oldmembres %}old{% else %}anch{% endif %}" class="anch m-a">
+                                                <div class="button button-h t-a-center mt30 ">
+                                                    <span class="white">
+                                                        <i class="fas fa-chevron-{% if membres or oldmembres %}down{% else %}up{% endif %}"></i>
+                                                    </span>
+                                                </div>
+                                            </a>   
+                                        {% endif %}
+                                    </div>                            
+                                </div>
+                            {% elseif loop.index%2 == 0 %}
+                                <a id="article-ere{{ loop.index }}" class="anch col-12 d-none d-md-block"></a>
+                                <div class="row col-12 col-md-6 row">
+
+                                    <h2 class="t-lg-8 t7 col-md-12 col-12 white">
+                                        <span class="white t-a-center">
+                                            {{ere.title|capitalize }}
+                                        </span>
+                                    </h2>
+                                    {# date #}
+                                    <div class="col-12 salle t3 ">
+                                        <h3 class="t-lg-5 t-5 p20 bk3 article-h3 t-a-center">
+                                            {#date de début#}
+                                            <span class="color8 mr10">{{ ere.get_field('debut') }}</span>
+                                            {# si date de fin #}
+                                            {% if ere.get_field('fin') %}
+                                                {# affichage de la date de fin de période #}
+                                                <span class="color8"> - {{ ere.get_field('fin') }}</span>
+                                            {# si période en cours (pas de date de fin et mention "à nos jours" cochée"#}
+                                            {% elseif ere.get_field('mention') == true and ere.get_field('fin') == null %}
+                                                à nos jours
+                                            {% endif %}
+                                        </h3>
+                                    </div>
+                                    <p class="col-12 toile">
+                                        {{ ere.get_field('texte_1') }}
+                                    </p>
+
+                                </div>
+                                <div class="white col-12 col-md-5 t3 toile mt-10">
+
+                                    <img src="{{ ere.get_field('image') }}" alt="photo de {{ site.url }}" class="col-12 m-a img">
+                                    {% if loop != loop.last %}
+                                   
+                                        <a href="#article-ere{{ loop.index+1 }}" class="col-12 anch">
+                                            <div class="button button-h t-a-center mt30">
+                                                <span class="white">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    {% elseif membres %}
+                                    
+                                            <a href="#article-membres" class="anch">
+                                                <div class="button button-h t-a-center mt30">
+                                                    <span class="white"><i class="fas fa-chevron-down"></i></span>
+                                                </div>
+                                            </a> 
+                                    {% elseif oldmembres %}
+                                    
+                                            <a href="#article-old" class="anch">
+                                                <div class="button button-h t-a-center mt30">
+                                                    <span class="white"><i class="fas fa-chevron-down"></i></span>
+                                                </div>
+                                            </a> 
+                                    {% else %}
+                                    
+                                            <a href="#article-anch" class="anch">
+                                                <div class="button button-h t-a-center mt30">
+                                                    <span class="white"><i class="fas fa-chevron-up"></i></span>
+                                                </div>
+                                            </a> 
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </section>
+                        <hr class="salle mt100 col-8 m-a">
+                    {% endfor %}
+                {% endif %}
+            </div> 
+           <div class="offset-md-1 d-none d-lg-block"></div> 
+            
+            {% if membres or oldmembres %}
+                <div class="row">
+                    {% if membres %}
+                        <a id="article-membres" class="col-12 anch"></a>
+                        <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title col-12">Les artistes</h1>
+                        <a href="{% if oldmembres %}#article-old{% else %}#article-anch{% endif %}" class="col-xs-12 col-md-12 t-a-center">
+                            <div class="button button2 button3">
+                                 <p><i class="fas fa-chevron-{% if oldmembres  %}down{% else %}up{% endif %}"></i></p>
+                            </div>
+                        </a>
+                        {% for membre in membres %}
+                            {% if loop.index == loop.last %}
+                               
+                                <div class="offset-2 offset-md-5"></div>
+                                <a  href="{{membre.link}}" class="col-8 m-a col-md-3 membre members row">
+                                        <h3 class="col-12 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
+                                        {% include 'views/partial/popups/member-popup.twig' %}
+                                        <div class="col-12 mt30">
+                                            <img src="{{ membre.thumbnail.src }}" class="w-60" alt="Image de {{ membre.title}}">
+                                            
+                                        </div>
+                                        <p class="lire">lire la suite</p>
+                                </a>
+                                <div class="offset-2 d-md-none d-block"></div>
+                                
+                            {% else %}
+                                <div class="offset-2  offset-md-1"></div>
+                                <a  href="{{membre.link}}" class="col-8 col-md-3 membre members row">
+                                        <h3 class="col-8 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
+                                        {% include 'views/partial/popups/member-popup.twig' %}
+                                        <div class="col-12 mt30">
+                                            <img src="{{ membre.thumbnail.src }}" class="w-60" alt="Image de {{ membre.title}}">
+                                            
+                                        </div>
+                                        <p class="lire">lire la suite</p>
+                                </a>
+                                <div class="offset-2 d-md-none d-block"></div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                
+                    {% if oldmembres %}
+                        <a id="article-old"></a>
+                        <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title col-12">Ils sont passés par chez nous</h1>
+                        {% for membre in oldmembres %}
+                            {% if loop.index == loop.last %}
+                                <div class="offset-2 offset-md-5"></div>
+                                <a  href="{{membre.link}}" class="col-8 m-a col-md-3 membre members row">
+                                        <h3 class="col-12 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
+                                        {% include 'views/partial/popups/member-popup.twig' %}
+                                        <div class="col-12 mt30">
+                                            <img src="{{ membre.thumbnail.src }}" class="w-60" alt="Image de {{ membre.title}}">
+                                            
+                                        </div>
+                                        <p class="lire">lire la suite</p>
+                                </a>
+                                <div class="offset-2 d-md-none d-block"></div>
+                                
+                            {% else %}
+                                <div class="offset-2  offset-md-1"></div>
+                                <a  href="{{membre.link}}" class="col-8 col-md-3 membre members row">
+                                        <h3 class="col-8 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
+                                        {% include 'views/partial/popups/member-popup.twig' %}
+                                        <div class="col-12 mt30">
+                                            <img src="{{ membre.thumbnail.src }}" class="w-60" alt="Image de {{ membre.title}}">
+                                            
+                                        </div>
+                                        <p class="lire">lire la suite</p>
+                                </a>
+                                <div class="offset-2 d-md-none d-block"></div>
+                            {% endif %}
+                           
+
+                        {% endfor %}
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                        <a href="#article-anch" class="col-xs-12 col-md-12 t-a-center">
+                            <div class="button button2 button3">
+                                <p><i class="fas fa-chevron-up"></i></p>
+                            </div>
+                        </a>
+                     {% endif %}
+                </div>
+                
+            {% endif %}
+           
+
+        </div>
+    </article>
+
+{% endblock %}

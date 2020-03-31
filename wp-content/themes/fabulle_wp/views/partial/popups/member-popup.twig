@@ -1,0 +1,28 @@
+<!-- The Modal -->
+
+    <div id="myModal{{loop.index}}" class="modal">
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content row white">
+            <span class="close col-12">&times;</span>
+            <div class="col-6 col-md-5 col-lg-3 m-a">
+                <div class="col-12 col-md-10 m-a">
+                    <img src="{{membre.thumbnail.src}}" alt="photo de {{membre.prenom}} {{membre.nom}}">
+                </div>
+               <h1 class="col-10 col-md-10 m-a article-h1 white">{{ membre.prenom }} {{membre.nom}}</h1>
+                <p class="col-10 col-md-6 m-a t-a-center metier">{{  membre.nom_de_scene }}</p>
+                <p class="col-10 col-md-8 link4 m-a">{{membre.get_field('instrument')}}</p>
+                
+            </div>
+            <div class="col-12 col-md-9 row">
+                
+                <p class="col-12 m-a">{{  membre.bio }}</p>
+                {% for show in membre.get_field('spectacle') %}
+                    <div class="col-10 col-md-4 col-lg-3 m-a mt30">
+                        <img src="{{show.thumbnail.src}}" alt="logo du spectacle:{{ show.title }}">
+                    </div>
+                   <div class="offset-md-1 d-none d-md-block"></div> 
+                {% endfor %} 
+            </div> 
+            <span class="close2 col-12">&times;</span> 
+        </div>
+    </div>

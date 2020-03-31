@@ -1,0 +1,36 @@
+
+    <div class="row row-eq-height loop w-80 m-a">
+        {% for show in shows %}
+            {% if show.get_field('dispo') == '1' %}
+
+                <div class="offset-md-1 d-none d-md-block"></div>
+                <a href="{{ show.link }}" class="event-list2 col-12 col-md-5 row">
+
+                    <div class="row  show_2 show-medal">
+                        <h2 class="col-10 col-md-6 m-a link d-none">
+                            {{ show.title }}
+                        </h2>
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                        <div class="thumb-medal thumb-medal2 col-12 col-md-10 cie-text">
+                            <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb  ">
+                            {{ show.content|truncate(30)}}
+                        </div>
+                        <div class="offset-md-1 d-none d-md-block"></div>
+                    </div>
+                </a>
+
+
+            {% endif %}
+        {% endfor %}
+
+        <div class="offset-md-1 d-none d-md-block"></div>
+        <a href="#article-anch4" class="mt-10 col-12 col-md-5 d-none d-md-block">
+            <div class="button button2 button3">
+                <p><i class="fas fa-chevron-down"></i></p>
+            </div>
+        </a>
+    </div>
+
+
+
+

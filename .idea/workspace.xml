@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ca6c317-a291-4927-8f50-d43d75f7b717" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_responsive..scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_responsive..scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_var.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/searchform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-39.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-39.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-7.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-7.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-839.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-839.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-972.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/footer.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/header.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/header.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/event-loop.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/event-loop.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/references-loop2.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/references-loop2.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop2.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop2.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/search.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/searchform.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-membre.twig" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-membre.twig" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1017687751">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="41" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="7" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="5" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.26" value="3" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="43" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="JPG" value="1" />
+          <entry key="css" value="10" />
+          <entry key="html" value="1" />
+          <entry key="jpg" value="7" />
+          <entry key="js" value="2" />
+          <entry key="php" value="249" />
+          <entry key="png" value="1" />
+          <entry key="scss" value="100" />
+          <entry key="twig" value="495" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="10" />
+          <entry key="Image" value="9" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PHP" value="244" />
+          <entry key="SCSS" value="100" />
+          <entry key="Scratch" value="7" />
+          <entry key="Twig" value="494" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="16" />
+          <entry key="html" value="1" />
+          <entry key="js" value="1" />
+          <entry key="php" value="7502" />
+          <entry key="scss" value="7396" />
+          <entry key="twig" value="35028" />
+          <entry key="txt" value="559" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="16" />
+          <entry key="Enforced Plain Text" value="16" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="6596" />
+          <entry key="PLAIN_TEXT" value="559" />
+          <entry key="SCSS" value="7396" />
+          <entry key="Scratch" value="892" />
+          <entry key="Twig" value="35027" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="5" />
+          <entry key="git.branch.create.new" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_states.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="807">
+              <caret line="187" column="1" selection-start-line="185" selection-end-line="187" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-7.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2393">
+              <caret line="310" column="42" selection-start-line="310" selection-start-column="42" selection-end-line="310" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/footer.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_responsive..scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="1129" column="16" selection-start-line="1129" selection-start-column="11" selection-end-line="1129" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="414" column="14" selection-start-line="414" selection-start-column="14" selection-end-line="414" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-839.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-34.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-444.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/event-loop.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="86" column="63" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>article</find>
+      <find>link4</find>
+      <find>field</find>
+      <find>post</find>
+      <find>news</find>
+      <find>contact</find>
+      <find>navbar-form</find>
+      <find>loop</find>
+      <find>border:2px solid $link;</find>
+      <find>dropd</find>
+      <find>is-search-form</find>
+      <find>&lt;!-- &lt;h2&gt;--&gt; &lt;!-- --&gt;&lt;!--&lt;/h2&gt;--&gt; &lt;!-- &lt;article class=&quot;article_found&quot; id=&quot;post---&gt;&lt;!--&quot;&gt;--&gt; &lt;!--   &lt;h3&gt;--&gt; &lt;!--     &lt;a href=&quot;--&gt;&lt;!--&quot; title=&quot;Lire l'article &amp;quot;--&gt;&lt;!--&amp;quot;&quot;&gt;--&gt; &lt;!--       --&gt;&lt;!--     &lt;/a&gt;--&gt; &lt;!--   &lt;/h3&gt;--&gt; &lt;!--   &lt;p class=&quot;the_excerpt&quot;&gt;--&gt; &lt;!--     --&gt;&lt;!--   &lt;/p&gt;--&gt; &lt;!--   &lt;footer class=&quot;metadata&quot;&gt;--&gt; &lt;!--     &lt;a class=&quot;url&quot; href=&quot;--&gt;&lt;!--&quot;&gt;--&gt; &lt;!--       --&gt;&lt;!--     &lt;/a&gt;--&gt; &lt;!--     &lt;time datetime=&quot;--&gt;&lt;!--&quot;&gt;--&gt; &lt;!--       --&gt;&lt;!--     &lt;/time&gt;--&gt; &lt;!--   &lt;/footer&gt;--&gt; &lt;!-- &lt;/article&gt;--&gt;</find>
+      <find>title=&quot;Lire l'article</find>
+      <find>strip_tags()</find>
+      <find>StarterSite</find>
+      <find>wp_Lang</find>
+      <find>wp_autocorrectindex</find>
+      <find>$compteTotal</find>
+      <find>is-</find>
+      <find>get_search_query()</find>
+      <find>=</find>
+      <find>background-image</find>
+      <find>chabada-b</find>
+      <find>localhost</find>
+      <find>separation.twig</find>
+      <find>logo2</find>
+      <find>background-image: url</find>
+      <find>event-list2</find>
+      <find>@</find>
+      <find>country-accordeon</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>link link2</replace>
+      <replace>lik link2</replace>
+      <replace>link</replace>
+      <replace>.home-post</replace>
+      <replace>reference</replace>
+      <replace>p,</replace>
+      <replace>p</replace>
+      <replace>event</replace>
+      <replace>musicien(ne)/chanteur(se)</replace>
+      <replace>offset-md-2</replace>
+      <replace>offset-md-2,</replace>
+      <replace>d-none d-md-block</replace>
+      <replace>old-membres</replace>
+      <replace>old-membre</replace>
+      <replace>oldmembre</replace>
+      <replace>datelist datelist2</replace>
+      <replace>date-list date-list2</replace>
+      <replace>{#</replace>
+      <replace>#}</replace>
+      <replace>.active\</replace>
+      <replace>post</replace>
+      <replace>em</replace>
+      <replace>em class=&quot;m-a d-block article-sub-h1&quot;&gt;</replace>
+      <replace>offset-1</replace>
+      <replace>col-10</replace>
+      <replace>contact</replace>
+      <replace>image_</replace>
+      <replace>news</replace>
+      <replace>new</replace>
+      <replace>mail</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-260.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-444.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-462.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-677.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-839.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-955.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-960.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-actus.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-dates.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-membres.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-places.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-projet.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-references.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/template-spectacles.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/single.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/single.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/searchform.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/header.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/head.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/tease-post.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/pagination.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/searchform.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/seach.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/base.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/search.twig" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/wp-advanced-search/WP-Advanced-Search-Function.php" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/searchform.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/functions.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/searchform.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-972.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/search.php" />
+        <option value="/private/var/folders/6p/r2ctcrcd5d935pksfz01vp080000gn/T/fz3temp-2/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_var.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-7.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/header.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop2.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-membre.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-39.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/references-loop2.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_states.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_responsive..scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/event-loop.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-839.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/footer.twig" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/style.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/wp-content/plugins/caldera-forms/vendor/calderawp/caldera-forms-query/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="636" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabulle_wp_cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabulle_wp_cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="fabulle_wp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partial" type="462c0819:PsiDirectoryNode" />
+              <item name="loops" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP&#10;HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/lib" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/loops" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/loops" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ca6c317-a291-4927-8f50-d43d75f7b717" name="Default Changelist" comment="" />
+      <created>1565770555093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565770555093</updated>
+      <workItem from="1565770556860" duration="49645000" />
+      <workItem from="1565983758122" duration="1205000" />
+      <workItem from="1565994124221" duration="1561000" />
+      <workItem from="1566033285212" duration="919000" />
+      <workItem from="1566034340117" duration="30716000" />
+      <workItem from="1566115699875" duration="2895000" />
+      <workItem from="1566130369493" duration="58257000" />
+      <workItem from="1566640275249" duration="456000" />
+      <workItem from="1566644379494" duration="597000" />
+      <workItem from="1566718068034" duration="2487000" />
+      <workItem from="1566792670806" duration="4663000" />
+      <workItem from="1566921072832" duration="234000" />
+      <workItem from="1567066056281" duration="27538000" />
+      <workItem from="1567326706685" duration="13515000" />
+      <workItem from="1567401682274" duration="11839000" />
+      <workItem from="1567494421661" duration="12266000" />
+      <workItem from="1567619032052" duration="157000" />
+      <workItem from="1567663278847" duration="10001000" />
+      <workItem from="1567750366413" duration="2702000" />
+      <workItem from="1567761028181" duration="9533000" />
+      <workItem from="1567791322183" duration="3045000" />
+      <workItem from="1567850803127" duration="16672000" />
+      <workItem from="1567894928727" duration="77188000" />
+      <workItem from="1568197381744" duration="19278000" />
+      <workItem from="1568272420528" duration="45128000" />
+      <workItem from="1568551362264" duration="10096000" />
+      <workItem from="1568637064980" duration="1375000" />
+      <workItem from="1568702305366" duration="5624000" />
+      <workItem from="1568745666707" duration="11522000" />
+      <workItem from="1568852106166" duration="1108000" />
+      <workItem from="1568888308473" duration="20993000" />
+      <workItem from="1568969224021" duration="16781000" />
+      <workItem from="1569060807928" duration="9127000" />
+      <workItem from="1569221203326" duration="48314000" />
+      <workItem from="1569406154466" duration="14167000" />
+      <workItem from="1569483272628" duration="19009000" />
+      <workItem from="1569571222752" duration="6186000" />
+      <workItem from="1569665833828" duration="19017000" />
+      <workItem from="1569710654581" duration="9363000" />
+      <workItem from="1569723587418" duration="709000" />
+      <workItem from="1569743255585" duration="12666000" />
+      <workItem from="1569826145397" duration="10323000" />
+      <workItem from="1569912071227" duration="16531000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1565818728276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565818728277</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1565898072109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565898072109</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CPT">
+      <created>1565905876763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565905876763</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CPT">
+      <created>1565905889660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565905889660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&#10;Templates &amp; CPT">
+      <created>1565916860841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565916860841</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&#10;Templates &amp; CPT&#10;dates ok&#10;tarifs&#10;dispo&#10;public/privé">
+      <created>1565978713873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565978713873</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&#10;Templates &amp; CPT&#10;dates ok&#10;tarifs&#10;dispo&#10;public/privé">
+      <created>1565980393305</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565980393305</updated>
+    </task>
+    <task id="LOCAL-00008" summary="home page">
+      <created>1566088155651</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1566088155651</updated>
+    </task>
+    <task id="LOCAL-00009" summary="home page&#10;section 1 OK">
+      <created>1566116448931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1566116448932</updated>
+    </task>
+    <task id="LOCAL-00010" summary="home page&#10;section 1 OK">
+      <created>1566118671513</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566118671513</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Avant cpt &quot;references&quot;">
+      <created>1566546447580</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566546447580</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Avant cpt &quot;references&quot;">
+      <created>1567294066108</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567294066108</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Avant cpt &quot;references&quot;">
+      <created>1567305119996</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567305119996</updated>
+    </task>
+    <task id="LOCAL-00014" summary="references ok&#10;todo&#10;la cie">
+      <created>1567518829821</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1567518829821</updated>
+    </task>
+    <task id="LOCAL-00015" summary="references ok&#10;todo la cie&#10;     search.php">
+      <created>1567518932767</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1567518932767</updated>
+    </task>
+    <task id="LOCAL-00016" summary="finalisation page d'accueil">
+      <created>1568133106752</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1568133106753</updated>
+    </task>
+    <task id="LOCAL-00017" summary="finalisation page d'accueil">
+      <created>1568383270788</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383270788</updated>
+    </task>
+    <task id="LOCAL-00018" summary="finalisation page d'accueil">
+      <created>1568383302422</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383302422</updated>
+    </task>
+    <task id="LOCAL-00019" summary="probleme boucle membres la cie">
+      <created>1568419160313</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568419160313</updated>
+    </task>
+    <task id="LOCAL-00020" summary="voir page conntact 'backoff':&#10;inscription newsletter">
+      <created>1568999916632</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1568999916632</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Option contact par page spectacle:&#10;Fait &#10;     - if cie referent &#10;     - if prod&#10;     &#10;     A voir : if cie&#10;     &#10;Page contact revoir la page et les champs avec cpt contacts">
+      <created>1569379431965</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1569379431965</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Option contact par page spectacle:&#10;Fait &#10;     - if cie referent &#10;     - if prod&#10;     &#10;     A voir : if cie&#10;     &#10;Page contact revoir la page et les champs avec cpt contacts">
+      <created>1569539735882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1569539735882</updated>
+    </task>
+    <task id="LOCAL-00023" summary="initial from branch&#10;A faire carousel de date (accueil)">
+      <created>1569539928053</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1569539928053</updated>
+    </task>
+    <task id="LOCAL-00024" summary="dernière étape... Moteur de recherche">
+      <created>1569708055643</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1569708055644</updated>
+    </task>
+    <task id="LOCAL-00025" summary="search fait chier">
+      <created>1569723482962</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1569723482962</updated>
+    </task>
+    <task id="LOCAL-00026" summary="search fait chier2">
+      <created>1569772594070</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1569772594070</updated>
+    </task>
+    <task id="LOCAL-00027" summary="search fait chier3">
+      <created>1569964236624</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1569964236624</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="635408000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32552505" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.23606889" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32624114" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.45896655" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1256656" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32956153" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32673267" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.45896655" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="CPT" />
+    <MESSAGE value="&#10;Templates &amp; CPT" />
+    <MESSAGE value="&#10;Templates &amp; CPT&#10;dates ok&#10;tarifs&#10;dispo&#10;public/privé" />
+    <MESSAGE value="home page" />
+    <MESSAGE value="home page&#10;section 1 OK" />
+    <MESSAGE value="Avant cpt &quot;references&quot;" />
+    <MESSAGE value="references ok&#10;todo&#10;la cie" />
+    <MESSAGE value="references ok&#10;todo la cie&#10;     search.php" />
+    <MESSAGE value="finalisation page d'accueil" />
+    <MESSAGE value="probleme boucle membres la cie" />
+    <MESSAGE value="voir page conntact 'backoff':&#10;inscription newsletter" />
+    <MESSAGE value="Option contact par page spectacle:&#10;Fait &#10;     - if cie referent &#10;     - if prod&#10;     &#10;     A voir : if cie&#10;     &#10;Page contact revoir la page et les champs avec cpt contacts" />
+    <MESSAGE value="initial from branch&#10;A faire carousel de date (accueil)" />
+    <MESSAGE value="dernière étape... Moteur de recherche" />
+    <MESSAGE value="search fait chier" />
+    <MESSAGE value="search fait chier2" />
+    <MESSAGE value="search fait chier3" />
+    <option name="LAST_COMMIT_MESSAGE" value="search fait chier3" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/tease-post.twig" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/seach.twig" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/pagination.twig" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/searchform.twig" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/search-results.twig" />
+    <entry file="file://$PROJECT_DIR$/wp-includes/formatting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="565" selection-start-line="565" selection-end-line="565" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-projet.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-955.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="7" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/head.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-839.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="57" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-960.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-960.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="8" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/search.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-advanced-search/WP-Advanced-Search-Function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-advanced-search/class.inc/autocompletion/autocompletion-PHP5.5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-565" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-advanced-search/class.inc/moteur-php5.5.class-inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="447" column="16" selection-start-line="447" selection-start-column="4" selection-end-line="447" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/searchform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71383">
+          <caret line="3762" selection-start-line="3762" selection-end-line="3762" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="59" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/base.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/loops/one-event-loop.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-260.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="114" column="87" selection-start-line="114" selection-start-column="87" selection-end-line="114" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-dates.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4313">
+          <caret line="227" column="45" selection-start-line="227" selection-start-column="45" selection-end-line="227" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partials/loops/event-loop.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="48" column="127" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/searchform.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="99" selection-start-column="99" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-677.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-972.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_10.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/page-34.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6042">
+          <caret line="318" column="5" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_var.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/header.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="131" column="33" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop2.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/template-membre.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="80" column="82" selection-start-line="80" selection-start-column="82" selection-end-line="80" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/references-loop2.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-39.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-784">
+          <caret line="39" column="85" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_states.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="187" column="1" selection-start-line="185" selection-end-line="187" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/partials/_responsive..scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="1129" column="16" selection-start-line="1129" selection-start-column="11" selection-end-line="1129" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-34.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-444.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-839.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/event-loop.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="86" column="63" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/page-7.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2393">
+          <caret line="310" column="42" selection-start-line="310" selection-start-column="42" selection-end-line="310" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/loops/show-loop.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/views/partial/footer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fabulle_wp/assets/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="414" column="14" selection-start-line="414" selection-start-column="14" selection-end-line="414" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

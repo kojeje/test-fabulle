@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr">
+<head>
+   {% include "views/partial/head.twig" %}
+</head>
+<body>
+    {% block tmp_slide %}{% endblock %}
+    {% include "views/partial/header.twig" %}
+    {% block content %}{% endblock %}
+    {% include "views/partial/footer.twig" %}
+    {% include "views/partial/script.twig" %}
+
+</body>
+
+</html>

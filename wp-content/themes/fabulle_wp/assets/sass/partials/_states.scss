@@ -1,0 +1,274 @@
+a:hover
+{
+  color: $link !important;
+  text-decoration: none;
+}
+
+.button:hover,
+.totop:hover,
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover
+{
+  opacity: 1;
+  color: $aqua !important;
+}
+.totop:hover
+{
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid $white;
+  -webkit-border-radius: 20px;
+  -mo-border-radius: 20px;
+  border-radius: 20px;
+  opacity:1;
+ }
+.totop i:hover
+{
+  color: $link;
+}
+.old-show:hover
+{
+  opacity:1;
+}
+.event-home-bloc:hover
+{
+  //background: $link;
+  //color: #000000 !important;
+  font-size: 16px;
+  font-weight: 900;
+  border: 3px solid $white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+}
+.event-home-bloc2:hover
+{
+  border: none;
+}
+
+
+.event-home-bloc:hover  .country{
+  opacity: 1;
+}
+
+.event-home-bloc:hover .salle
+{
+  color: #000000 !important;
+}
+.event-home-bloc iframe:hover {
+  opacity: 1 !important;
+  padding: 0 !important;
+  z-index: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.event-home-bloc2 iframe:hover {
+  opacity: 1 !important;
+  padding: 0 !important;
+  z-index: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.event-home-bloc-medal:hover
+{
+  font-size: 12px;
+  font-weight: 900;
+}
+.url:hover a
+{
+  color: $aqua !important;
+}
+.dropdown-item:hover
+{
+
+  background: transparent !important;
+
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+  color: $aqua !important;
+}
+.bk-black:hover{
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius:50px;
+  padding: 20px;
+  font-size: 25px;
+
+}
+.read-more span:hover{
+  color: $white;
+}
+.btn-outline-success:hover{
+  background-color: #ffffff;
+}
+.navbar-form:hover {
+  opacity:1;
+}
+
+.link:hover{
+  //border-top: 4px solid $carmin;
+  color: $carmin;
+  font-size: 24px;
+
+}
+
+.link\#66ccff:hover{
+  //border-top: 4px solid #66ccff;
+  color:#66ccff !important;
+
+}
+.link\#ff6633:hover{
+  color: #ff6633 !important;
+  //border-top: 4px solid #ff6633;
+}
+.link\#ffcc33:hover{
+  color: #ffcc33 !important;
+  //border-top: 4px solid #ffcc33;
+}
+.link\#00c94a:hover{
+  color:#00c94a !important;
+}
+.link\#c90089:hover{
+  color:#c90089 !important;
+}
+.mt0{
+  margin-top: 0;
+}
+.p0{
+  padding: 0;
+}
+.link4:hover{
+  color: #f9e2e2 !important;
+}
+.link3:hover{
+  font-size: 35px;
+}
+.link2:hover{
+  font-size: 50px;
+}
+//.home-post:hover,
+//.thumb p:hover{
+//  font-size: 125%;
+//}
+.cie-text:hover,
+.cie-text p:hover{
+  font-size: 125% !important;
+}
+.event-home-bloc2:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.event-home-ref-block:hover{
+  border: 3px solid #ff6633;
+  background-color: $dark-blue-transparent;
+}
+.event-home-date-block:hover{
+  border: 3px solid #ffcc33;
+  background-color: $dark-blue-transparent;
+}
+.event-list2:hover{
+  background-color: $dark-blue-less-transparent;
+}
+.dropdown-toggle::after{
+  display:none;
+}
+.btn:hover
+{
+  color:#000000;
+  background-color: #ffb630;
+  border: 2px solid #ffffff;
+}
+.help-block:hover{
+  opacity: 1;
+}
+.date-it:hover .country-accordeon{
+  transform: scaleY(1);
+}
+.date-it:hover .country-offset{
+  display: none !important;
+}
+.is-search-form:hover{
+  opacity: 1;
+}
+.members:hover .members p,
+.members:hover .members img{
+  opacity: 0.3;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 15000;
+  /* Sit on top */
+  //  left: auto;
+  //  right: auto;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  max-width: none !important;
+  width: 100%;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  scroll-behavior: smooth !important;
+  background-color: #000000;
+  /* Black w/ opacity */
+  padding: 0 !important;
+  scrollbar-width: thin !important;
+
+}
+
+.modal::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+  margin: auto !important;
+  flex-direction: row;
+  justify-content: space-between;
+  //    width: 100%; /* Could be more or less, depending on screen size */
+  opacity: 1;
+  padding: 0 !important;
+  background-color: transparent !important;
+
+  scrollbar-width: 0 !important;
+
+
+}
+
+/* The Close Button */
+.close,
+.close2 {
+  color: #ffb630 !important;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 1 !important;
+  text-align: right !important;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus {
+  color: aqua !important;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1 !important;
+}
+
+.modal-img {
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+  margin: auto;
+  opacity: 1 !important;
+}
+

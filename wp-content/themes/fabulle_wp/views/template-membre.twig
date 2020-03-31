@@ -1,0 +1,164 @@
+{% extends "base.twig" %}
+
+
+{% block content %}
+    <a id="article-anch" class="anch"></a>
+    <div class="container-fluid content-wrapper article_content show-content">
+
+        <article class="row post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <h1 class="col-md-4 col-12">Membre</h1>
+
+            <div class="article-content ">
+
+
+                <div class="row">
+                   <div class="d-none d-md-block offset-md-1"></div>
+                   <div class=" col-10 row">
+                       <div class="col-3"> <img src="{{post.thumbnail.src}}" alt="affiche"></div>
+
+                       <div class="col-6 col-md-9 row">
+                           <h1 class="col-md-6 col-12 article-h1 under-title link#ff66332">{{ post.get_field('prenom') }} {{ post.get_field('nom') }}</h1>
+                           {% if post.get_field('nom_de_scene') %}
+                               <h2 class="t-a-center">{{ post.get_field('nom_de_scene') }}</h2>
+                           {% endif %}
+
+                           {% if 'comédien(ne)' in post.get_field('metiers')|join and  post.get_field('genre') == "femme"%}
+                               <p class="col-md-6 col-12 t-a-center article-sub-h1">comédienne </p>
+                           {% elseif 'comédien(ne)' in post.get_field('metiers')|join and  post.get_field('genre') == "homme"%}
+                               <p class="t-a-center article-sub-h1">comédien</p>
+
+                           {% else %}
+                               <p class="col-md-6 col-12 t-a-center article-sub-h2">{{ post.get_field('metier')|join }}</p>
+                           {% endif %}
+                           {% if 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                               and  post.get_field('genre') == "femme"%}
+                               <p class="col-12 t-a-center article-sub-h1">musicienne/chanteuse </p>
+                           {% elseif 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                               and  post.get_field('genre') == "homme"%}
+                               <p class="t-a-center article-sub-h1">musicien/chanteur </p>
+                           {% endif %}
+                           {% if 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                               and post.get_field('instrument') %}
+                               <p class="t-a-center"> {{ post.get_field('instrument') }}</p>
+                           {% endif %}
+                       </div>
+                       <div class="d-none d-md-block offset-md-2"></div>
+                       <h3 class="col-md-8 col-12 t-a-center">Ceci explique cela...</h3>
+                       <div class="d-none d-md-block offset-md-2"></div>
+                       <div class="d-none d-md-block offset-md-2"></div>
+                       <div class="col-md-8 col-12">{{ post.get_field('bio') }}</div>
+                       <div class="d-none d-md-block offset-md-2"></div>
+
+
+                   </div>
+                   <div class="offset-md-1 d-none d-md-block"></div>
+
+                </div>
+                <div class="offset-md-1 d-none d-md-block"></div>
+           </div>
+
+
+                 {# <div class="row">
+                    {% for show in shows %}
+                       
+                        {% if show.get_field('id_show') in post.get_field('spectacle') %}
+                            {% if show.get_field('dispo') == 1 %}
+                                {% if post.get_field('genre') == 'homme' %}
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                    <h2 class="article-h1-left col-12 col-md-6 members">Il joue dans:</h2>
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                    <a href="{{ show.link }}" class="row col-md-8 col-12 show_2">
+                                        <div class="row">
+                                            <div class="thumb-medal thumb-medal2 col-md-12">
+                                                <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb oneevent-img ">
+                                                {{ show.content }}
+                                            </div>
+                                            <div class="member-show"></div>
+                                        </div>
+                                    </a>
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                {% else %}
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                    <h2 class="article-h1-left col-12 col-md-8 members">Elle joue dans:</h2>
+                                    <div class="offset-md-2 d-none-block"></div>
+                                    <div class="offset-md-2 d-none d-md-block"></div>
+                                    <a href="{{ show.link }}" class="row col-md-8 col-12 show_2">
+                                        <div class="row col-12">
+                                            <div class="thumb-medal thumb-medal2 col-md-12">
+                                                <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb oneevent-img ">
+                                                {{ show.content }}
+                                            </div>
+                                            <div class="member-show"></div>
+                                        </div>
+                                    </a>
+                                    <div class="offset-md-2, d-none-block"></div>
+                                {% endif %}
+
+                            {% elseif show.get_field('dispo') == 2 %}
+
+                            {% if post.get_field('genre') == 'homme' %}
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <h2 class="article-h1-left col-md-8 col-12">Il jouait dans:</h2>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <a href="{{ show.link }}" class="row col-md-8 col-12 show_2">
+                                    <div class="row col-12">
+                                        <div class="thumb-medal thumb-medal2 col-md-12">
+                                            <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb oneevent-img ">
+                                            {{ show.content }}
+                                        </div>
+                                        <div class="member-show"></div>
+                                    </div>
+                                </a>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                            {% else %}
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <h2 class="article-h1-left col-md-8 col-12">Elle jouait dans:</h2>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <a href="{{ show.link }}" class="row col-md-8 col-12 show_2">
+                                    <div class="row col-12">
+                                        <div class="thumb-medal thumb-medal2 col-md-12">
+                                            <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb oneevent-img ">
+                                            {{ show.content }}
+                                        </div>
+                                        <div class="member-show"></div>
+                                    </div>
+                                </a>
+                                <div class="offset-md-2, d-none-block"></div>
+                            {% endif %}
+                            {% elseif show.get_field('dispo') == 3 %}
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <h2 class="article-h1-left col-12 col-md-8">Prochains projets (en création)</h2>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                                <a href="{{ show.link }}" class="row col-md-8 col-12 show_2">
+                                    <div class="row">
+                                        <div class="thumb-medal thumb-medal2 col-md-12">
+                                            <img src="{{show.thumbnail.src}}" alt="affiche" class="affiche float-thumb oneevent-img ">
+                                            {{ show.content }}
+                                        </div>
+                                        <div class="member-show"></div>
+                                    </div>
+                                </a>
+                                <div class="offset-md-2 d-none d-md-block"></div>
+                            {% endif %}
+
+                        {% endif %}
+
+                    {% endfor %}
+                </div>  #}
+
+
+
+
+
+
+        </article>
+    </div>
+
+
+{% endblock %}
+
+

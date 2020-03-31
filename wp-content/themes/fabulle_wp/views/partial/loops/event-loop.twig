@@ -1,0 +1,131 @@
+<section>
+    <div id="title-bloc" class="title-bloc2 flex-title-bloc col-12 row">
+        <div class="event-list2 event-home-bloc">
+            {# titre section #}
+            <h2 class="active#00c94a titre-page article-h1 under-title h1-event-list col-md-5 col-12 link#66ccff2">
+                <i class="far fa-eye"></i>
+                Nous Voir
+            </h2>
+
+            <section class="row members">
+                {% for event in events %}
+                    {# Pour chaque date on retourne l'objet spectacle correspondant #}
+                    {% for show in shows%}
+                        {# Si la date est publique
+                              et
+                                  si le spectacle est dispo
+                              et
+                                  si la date est à venir
+                                  #}
+                        {% if show.get_field('id_show') == event.get_field('id_show')
+                            and show.get_field('dispo') == 1
+                            and "now"|date <= event.get_field('date_show')%}
+                            {% if event.get_field('public') == true %}
+
+                                <div class="offset-md-1 d-none d-md-block"></div>
+                                {# item date avec lien vers l'archive #}
+                                <a class="row col-md-3" href="{{ event.link }}">
+
+                                    {# date du spectacle #}
+
+                                    <div class="date-list date-it col-12 row">
+                                        <h5 class="col-12">{{ event.get_field('date_show') }}</h5>
+                                        {# thumbnail #}
+                                        <div class="offset-md-2 d-none d-md-block"></div>
+                                        <div class="col-8">
+                                            <img src="{{ show.thumbnail.src }}" alt="thumb">
+                                        </div>
+                                        <div class="offset-md-2 d-none d-md-block"></div>
+
+                                        {# Pour chaque date on retourne le lieu correspondant #}
+                                        {% for place in places if place.get_field('salle') == event.get_field('salle')%}
+                                            <p class="col-12 country country-accordeon">{{ place.get_field('salle') }}</p>
+                                            {# Si le spectacle se déroule en France #}
+                                            {% if place.get_field('pays') == 'France' %}
+                                                {# CP  #}
+                                                <p class="col-12  col-md-6 country-accordeon simple simple2">
+                                                    {{ place.get_field('cp') }}
+                                                </p>
+                                                <div class="d-none d-md-block offset-md-6 country-offset simple simple2"></div>
+                                                <p class="col-12 col-md-5  simple2">
+                                                    {{ place.get_field('commune') }}
+                                                </p>
+                                            {% endif %}
+
+
+
+                                                {# Si le spectacle se déroule à l"étranger #}
+                                            {%if place.get_field('pays') != 'France' %}
+                                                <p class="col-12  col-md-6 country-accordeon simple simple2">
+                                                    {{ place.get_field('commune') }}
+                                                </p>
+                                                <div class="d-none d-md-block offset-md-6 country-offset simple simple2"></div>
+                                                <p class="col-12 col-md-5 country">
+                                                    {{ place.get_field('pays') }}
+                                                </p>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    </div>
+                                </a>
+
+                                {# Si la date est privée
+                              et
+                                  si le spectacle est dispo
+                              et
+                                  si la date est à venir
+                                  #}
+                            {% elseif event.get_field('public') == false %}
+
+                                <div class="offset-md-1 d-none d-md-block"></div>
+                                {# item date avec lien vers l'archive #}
+                                <a class="row col-md-3" href="{{ event.link }}">
+
+                                    {# date du spectacle #}
+
+                                    <div class="date-list row date-it col-12">
+                                        <h5 class="col-12">{{ event.get_field('date_show') }}</h5>
+                                        <div class="offset-md-2"></div>
+                                        {# thumbnail #}
+                                        <div class="col-8">
+                                            <img src="{{ show.thumbnail.src }}" alt="thumb">
+                                        </div>
+                                        <div class="offset-md-2 d-none d-md-block"></div>
+                                        {#Privé#}
+                                        <p class="col-12 country country-accordeon">{{ 'évènement privé' }}</p>
+                                        {# Pour chaque date on retourne le lieu correspondant #}
+                                        {% for place in places if place.get_field('salle') == event.get_field('salle')%}
+                                            {# Si le spectacle se déroule en France #}
+                                            {% if place.get_field('pays') == 'France' %}
+                                                {# CP  #}
+                                                <p class="col-12  col-md-6 country-accordeon simple simple2">
+                                                    {{ place.get_field('cp') }}
+                                                </p>
+                                            {% endif %}
+
+                                            <div class="d-none d-md-block offset-md-6 country-offset simple simple2"></div>
+                                            <p class="col-12 col-md-5  simple2">
+                                                {{ place.get_field('commune') }}
+                                            </p>
+                                            {# Si le spectacle se déroule à l"étranger #}
+                                            {% if place.get_field('pays') != 'France' %}
+                                                <p class="col-12 col-md-5 country">
+                                                    {{ place.get_field('pays') }}
+                                                </p>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </section>
+            <a href="{{ site.link }}/nous-voir" class="col-12 col-md-4">
+                <i class="far fa-eye"></i>
+                Toutes les représentations
+            </a>
+        </div>
+    </div>
+
+</section>
