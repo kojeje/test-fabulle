@@ -5,7 +5,6 @@ namespace MailPoet\Newsletter\ViewInBrowser;
 if (!defined('ABSPATH')) exit;
 
 
-use MailPoet\Config\AccessControl;
 use MailPoet\Models\Newsletter;
 use MailPoet\Models\SendingQueue;
 use MailPoet\Models\Subscriber;
@@ -13,9 +12,6 @@ use MailPoet\Newsletter\Url as NewsletterUrl;
 use MailPoet\Subscribers\LinkTokens;
 
 class ViewInBrowserController {
-  /** @var AccessControl */
-  private $accessControl;
-
   /** @var LinkTokens */
   private $linkTokens;
 
@@ -23,11 +19,9 @@ class ViewInBrowserController {
   private $viewInBrowserRenderer;
 
   public function __construct(
-    AccessControl $accessControl,
     LinkTokens $linkTokens,
     ViewInBrowserRenderer $viewInBrowserRenderer
   ) {
-    $this->accessControl = $accessControl;
     $this->linkTokens = $linkTokens;
     $this->viewInBrowserRenderer = $viewInBrowserRenderer;
   }
@@ -44,12 +38,9 @@ class ViewInBrowserController {
       $subscriber = Subscriber::getCurrentWPUser() ?: null;
     }
 
-    // allow users with permission to manage emails to preview any newsletter
-    $canView = $isPreview && $this->accessControl->validatePermission(AccessControl::PERMISSION_MANAGE_EMAILS);
-
     // if queue and subscriber exist, subscriber must have received the newsletter
     $queue = $this->getQueue($newsletter, $data);
-    if (!$canView && $queue && $subscriber && !$queue->isSubscriberProcessed($subscriber->id)) {
+    if (!$isPreview && $queue && $subscriber && !$queue->isSubscriberProcessed($subscriber->id)) {
       throw new \InvalidArgumentException("Subscriber did not receive the newsletter yet");
     }
 

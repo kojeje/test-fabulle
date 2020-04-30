@@ -5,6 +5,7 @@ namespace MailPoet\Form\Block;
 if (!defined('ABSPATH')) exit;
 
 
+use MailPoet\Form\BlockStylesRenderer;
 use MailPoet\Form\BlockWrapperRenderer;
 
 class Submit {
@@ -15,9 +16,13 @@ class Submit {
   /** @var BlockWrapperRenderer */
   private $wrapper;
 
-  public function __construct(BlockRendererHelper $rendererHelper, BlockWrapperRenderer $wrapper) {
+  /** @var BlockStylesRenderer */
+  private $stylesRenderer;
+
+  public function __construct(BlockRendererHelper $rendererHelper, BlockWrapperRenderer $wrapper, BlockStylesRenderer $stylesRenderer) {
     $this->rendererHelper = $rendererHelper;
     $this->wrapper = $wrapper;
+    $this->stylesRenderer = $stylesRenderer;
   }
 
   public function render(array $block): string {
@@ -28,6 +33,12 @@ class Submit {
     $html .= 'value="' . $this->rendererHelper->getFieldLabel($block) . '" ';
 
     $html .= 'data-automation-id="subscribe-submit-button" ';
+
+    $styles = $this->stylesRenderer->renderForButton($block['styles'] ?? []);
+
+    if ($styles) {
+      $html .= 'style="' . $styles . '" ';
+    }
 
     $html .= '/>';
 

@@ -15,6 +15,25 @@ class DisplayFormInWPContent {
 
   const NO_FORM_TRANSIENT_KEY = 'no_forms_displayed_bellow_content';
 
+  const SETUP = [
+    'below_post' => [
+      'post' => 'place_form_bellow_all_posts',
+      'page' => 'place_form_bellow_all_pages',
+    ],
+    'popup' => [
+      'post' => 'place_popup_form_on_all_posts',
+      'page' => 'place_popup_form_on_all_pages',
+    ],
+    'fixed_bar' => [
+      'post' => 'place_fixed_bar_form_on_all_posts',
+      'page' => 'place_fixed_bar_form_on_all_pages',
+    ],
+    'slide_in' => [
+      'post' => 'place_slide_in_form_on_all_posts',
+      'page' => 'place_slide_in_form_on_all_pages',
+    ],
+  ];
+
   /** @var WPFunctions */
   private $wp;
 
@@ -61,8 +80,8 @@ class DisplayFormInWPContent {
 
     $this->assetsController->setupFrontEndDependencies();
     $result = $content;
-    foreach ($forms as $form) {
-      $result .= $this->getContentBellow($form);
+    foreach ($forms as $displayType => $form) {
+      $result .= $this->getContentBellow($form, $displayType);
     }
 
     return $result;
@@ -84,16 +103,32 @@ class DisplayFormInWPContent {
   }
 
   /**
-   * @return FormEntity[]
+   * @return array<string, FormEntity>
    */
   private function getForms(): array {
-    $forms = $this->formsRepository->findBy(['deletedAt' => null]);
-    return array_filter($forms, function($form) {
-      return $this->shouldDisplayFormBellowContent($form);
-    });
+    $forms = $this->formsRepository->findBy(['deletedAt' => null], ['updatedAt' => 'ASC']);
+    $forms = $this->filterOneFormInEachDisplayType($forms);
+    return $forms;
   }
 
-  private function getContentBellow(FormEntity $form): string {
+  /**
+   * @param FormEntity[] $forms
+   * @return array<string, FormEntity>
+   */
+  private function filterOneFormInEachDisplayType($forms): array {
+    $formsFiltered = [];
+    foreach ($forms as $form) {
+      foreach (array_keys(self::SETUP) as $displayType) {
+        if ($this->shouldDisplayFormType($form, $displayType)) {
+          $formsFiltered[$displayType] = $form;
+        }
+      }
+    }
+    return $formsFiltered;
+  }
+
+  private function getContentBellow(FormEntity $form, string $displayType): string {
+    if (!$this->shouldDisplayFormType($form, $displayType)) return '';
     $formData = [
       'body' => $form->getBody(),
       'styles' => $form->getStyles(),
@@ -105,7 +140,7 @@ class DisplayFormInWPContent {
       'form_html_id' => $htmlId,
       'form_id' => $form->getId(),
       'form_success_message' => $formSettings['success_message'] ?? null,
-      'form_type' => 'below_post',
+      'form_type' => $displayType,
       'styles' => $this->formRenderer->renderStyles($formData, '#' . $htmlId),
       'html' => $this->formRenderer->renderHTML($formData),
       'form_element_styles' => $this->formRenderer->renderFormElementStyles($formData),
@@ -123,6 +158,10 @@ class DisplayFormInWPContent {
       ((int)$_GET['mailpoet_error'] === $form->getId())
     );
 
+    $templateData['delay'] = $formSettings[$displayType . '_form_delay'] ?? 0;
+    $templateData['position'] = $formSettings[$displayType . '_form_position'] ?? '';
+    $templateData['backgroundColor'] = $formSettings['backgroundColor'] ?? '';
+
     // generate security token
     $templateData['token'] = Security::generateToken();
 
@@ -131,18 +170,19 @@ class DisplayFormInWPContent {
     return $this->templateRenderer->render('form/front_end_form.html', $templateData);
   }
 
-  private function shouldDisplayFormBellowContent(FormEntity $form): bool {
+  private function shouldDisplayFormType(FormEntity $form, string $formType): bool {
     $settings = $form->getSettings();
     if (!is_array($settings)) return false;
-    if (!isset($settings['place_form_bellow_all_posts'])) return false;
-    if (
-      ($settings['place_form_bellow_all_posts'] === '1')
-      && $this->wp->isSingular('post')
-    ) return true;
-    if (
-      ($settings['place_form_bellow_all_pages'] === '1')
-      && $this->wp->isPage()
-    ) return true;
-    return false;
+
+    $keys = self::SETUP[$formType];
+    $key = '';
+    if ($this->wp->isSingular('post')) {
+      $key = $keys['post'];
+    }
+    if ($this->wp->isPage()) {
+      $key = $keys['page'];
+    }
+
+    return (isset($settings[$key]) && ($settings[$key] === '1'));
   }
 }

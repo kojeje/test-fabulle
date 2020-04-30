@@ -34,7 +34,7 @@ class MetadataCache extends CacheProvider {
     if (!$this->doContains($id)) {
       return false;
     }
-    return unserialize(file_get_contents($this->getFilename($id)));
+    return unserialize((string)file_get_contents($this->getFilename($id)));
   }
 
   protected function doContains($id) {
@@ -43,7 +43,7 @@ class MetadataCache extends CacheProvider {
 
     // in dev mode invalidate cache if source file has changed
     if ($fileExists && $this->isDevMode) {
-      $classMetadata = unserialize(file_get_contents($filename));
+      $classMetadata = unserialize((string)file_get_contents($filename));
       assert($classMetadata instanceof DoctrineClassMetadata || $classMetadata instanceof ValidatorClassMetadata);
       try {
         $reflection = new ReflectionClass($classMetadata->name);
@@ -51,7 +51,7 @@ class MetadataCache extends CacheProvider {
         return false;
       }
       clearstatcache();
-      return filemtime($filename) >= filemtime($reflection->getFileName());
+      return filemtime((string)$filename) >= filemtime((string)$reflection->getFileName());
     }
 
     return $fileExists;
@@ -72,7 +72,11 @@ class MetadataCache extends CacheProvider {
   }
 
   protected function doFlush() {
-    foreach (glob($this->directory . DIRECTORY_SEPARATOR . '*') as $filename) {
+    $directoryContent = glob($this->directory . DIRECTORY_SEPARATOR . '*');
+    if ($directoryContent === false) {
+      return false;
+    }
+    foreach ($directoryContent as $filename) {
       if (is_file($filename)) {
         @unlink($filename);
       }

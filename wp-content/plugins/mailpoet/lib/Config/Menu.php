@@ -5,7 +5,6 @@ namespace MailPoet\Config;
 if (!defined('ABSPATH')) exit;
 
 
-use MailPoet\AdminPages\Pages\DynamicSegments;
 use MailPoet\AdminPages\Pages\ExperimentalFeatures;
 use MailPoet\AdminPages\Pages\FormEditor;
 use MailPoet\AdminPages\Pages\Forms;
@@ -13,13 +12,11 @@ use MailPoet\AdminPages\Pages\Help;
 use MailPoet\AdminPages\Pages\MP2Migration;
 use MailPoet\AdminPages\Pages\NewsletterEditor;
 use MailPoet\AdminPages\Pages\Newsletters;
-use MailPoet\AdminPages\Pages\OldSettings;
 use MailPoet\AdminPages\Pages\Premium;
 use MailPoet\AdminPages\Pages\RevenueTrackingPermission;
 use MailPoet\AdminPages\Pages\Segments;
 use MailPoet\AdminPages\Pages\Settings;
 use MailPoet\AdminPages\Pages\Subscribers;
-use MailPoet\AdminPages\Pages\SubscribersAPIKeyInvalid;
 use MailPoet\AdminPages\Pages\SubscribersExport;
 use MailPoet\AdminPages\Pages\SubscribersImport;
 use MailPoet\AdminPages\Pages\Update;
@@ -60,7 +57,6 @@ class Menu {
   }
 
   public function init() {
-    $this->checkMailPoetAPIKey();
     $this->checkPremiumKey();
 
     $this->wp->addAction(
@@ -272,27 +268,6 @@ class Menu {
       ]);
     });
 
-    // Dynamic segments page
-    $dynamicSegmentsPage = $this->wp->addSubmenuPage(
-      self::MAIN_PAGE_SLUG,
-      $this->setPageTitle(__('Segments', 'mailpoet')),
-      $this->wp->__('Segments', 'mailpoet'),
-      AccessControl::PERMISSION_MANAGE_SEGMENTS,
-      'mailpoet-dynamic-segments',
-      [
-        $this,
-        'dynamicSegments',
-      ]
-    );
-
-    // add limit per page to screen options
-    $this->wp->addAction('load-' . $dynamicSegmentsPage, function() {
-      $this->wp->addScreenOption('per_page', [
-        'label' => WPFunctions::get()->_x('Number of segments per page', 'segments per page (screen options)', 'mailpoet'),
-        'option' => 'mailpoet_dynamic_segments_per_page',
-      ]);
-    });
-
     // Settings page
     $this->wp->addSubmenuPage(
       self::MAIN_PAGE_SLUG,
@@ -302,7 +277,7 @@ class Menu {
       'mailpoet-settings',
       [
         $this,
-        'oldSettings',
+        'settings',
       ]
     );
 
@@ -398,7 +373,7 @@ class Menu {
       ]
     );
 
-    // Settings page
+    // Experimental page
     $this->wp->addSubmenuPage(
       true,
       $this->setPageTitle('Experimental Features'),
@@ -406,16 +381,6 @@ class Menu {
       AccessControl::PERMISSION_MANAGE_FEATURES,
       'mailpoet-experimental',
       [$this, 'experimentalFeatures']
-    );
-
-    // New Settings page
-    $this->wp->addSubmenuPage(
-      true,
-      $this->setPageTitle('New Settings'),
-      '',
-      AccessControl::PERMISSION_MANAGE_SETTINGS,
-      'mailpoet-new-settings',
-      [$this, 'settings']
     );
   }
 
@@ -448,10 +413,6 @@ class Menu {
     $this->container->get(Premium::class)->render();
   }
 
-  public function oldSettings() {
-    $this->container->get(OldSettings::class)->render();
-  }
-
   public function settings() {
     $this->container->get(Settings::class)->render();
   }
@@ -472,18 +433,11 @@ class Menu {
     $this->container->get(Segments::class)->render();
   }
 
-  public function dynamicSegments() {
-    $this->container->get(DynamicSegments::class)->render();
-  }
-
   public function forms() {
     $this->container->get(Forms::class)->render();
   }
 
   public function newsletters() {
-    if (isset($this->mpApiKeyValid) && $this->mpApiKeyValid === false) {
-      return $this->displayMailPoetAPIKeyInvalid();
-    }
     $this->container->get(Newsletters::class)->render();
   }
 
@@ -501,11 +455,6 @@ class Menu {
 
   public function formEditor() {
     $this->container->get(FormEditor::class)->render();
-  }
-
-  private function displayMailPoetAPIKeyInvalid() {
-    $this->container->get(SubscribersAPIKeyInvalid::class)->render();
-    exit;
   }
 
   public function setPageTitle($title) {
@@ -562,15 +511,6 @@ class Menu {
 
   public static function errorPageCallback() {
     // Used for displaying admin notices only
-  }
-
-  public function checkMailPoetAPIKey(ServicesChecker $checker = null) {
-    if (self::isOnMailPoetAdminPage()) {
-      $showNotices = isset($_REQUEST['page'])
-        && stripos($_REQUEST['page'], self::MAIN_PAGE_SLUG) === false;
-      $checker = $checker ?: $this->servicesChecker;
-      $this->mpApiKeyValid = $checker->isMailPoetAPIKeyValid($showNotices);
-    }
   }
 
   public function checkPremiumKey(ServicesChecker $checker = null) {

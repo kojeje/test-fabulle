@@ -276,6 +276,13 @@ class Functions {
   }
 
   /**
+   * @return false|int
+   */
+  public function getTheId() {
+    return get_the_ID();
+  }
+
+  /**
    * @param  int|\WP_User $userId
    */
   public function getUserLocale($userId = 0) {
@@ -636,6 +643,10 @@ class Functions {
    */
   public function activatePlugin($plugin, $redirect = '', $networkWide = false, $silent = false) {
     return activate_plugin($plugin, $redirect, $networkWide, $silent);
+  }
+
+  public function wpGetAttachmentImageSrcset(int $attachmentId, $size = 'medium', $imageMeta = null) {
+    return wp_get_attachment_image_srcset($attachmentId, $size, $imageMeta);
   }
 
   /**

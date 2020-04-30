@@ -5,14 +5,14 @@ namespace MailPoet\Form\Block;
 if (!defined('ABSPATH')) exit;
 
 
+use MailPoet\Form\BlockStylesRenderer;
 use MailPoet\Form\BlockWrapperRenderer;
-use MailPoet\Form\TextInputStylesRenderer;
 
 class Text {
   /** @var BlockRendererHelper */
   private $rendererHelper;
 
-  /** @var TextInputStylesRenderer */
+  /** @var BlockStylesRenderer */
   private $inputStylesRenderer;
 
   /** @var BlockWrapperRenderer */
@@ -20,7 +20,7 @@ class Text {
 
   public function __construct(
     BlockRendererHelper $rendererHelper,
-    TextInputStylesRenderer $inputStylesRenderer,
+    BlockStylesRenderer $inputStylesRenderer,
     BlockWrapperRenderer $wrapper
   ) {
     $this->rendererHelper = $rendererHelper;
@@ -39,7 +39,7 @@ class Text {
       $automationId = 'data-automation-id="form_' . $block['id'] . '" ';
     }
 
-    $styles = $this->inputStylesRenderer->render($block['styles'] ?? []);
+    $styles = $this->inputStylesRenderer->renderForTextInput($block['styles'] ?? []);
 
     if (in_array($block['id'], ['email', 'last_name', 'first_name'], true)) {
       $automationId = 'data-automation-id="form_' . $block['id'] . '" ';

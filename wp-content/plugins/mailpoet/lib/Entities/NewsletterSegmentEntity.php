@@ -34,7 +34,7 @@ class NewsletterSegmentEntity {
   private $segment;
 
   /**
-   * @return NewsletterEntity
+   * @return NewsletterEntity|null
    */
   public function getNewsletter() {
     $this->safelyLoadToOneAssociation('newsletter');
@@ -46,7 +46,7 @@ class NewsletterSegmentEntity {
   }
 
   /**
-   * @return SegmentEntity
+   * @return SegmentEntity|null
    */
   public function getSegment() {
     $this->safelyLoadToOneAssociation('segment');

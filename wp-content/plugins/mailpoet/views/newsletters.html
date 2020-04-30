@@ -27,6 +27,8 @@
       var mailpoet_date_storage_format = "Y-m-d";
       var mailpoet_tracking_enabled = <%= json_encode(tracking_enabled) %>;
       var mailpoet_premium_active = <%= json_encode(premium_plugin_active) %>;
+      var mailpoet_transactional_emails_opt_in_notice_dismissed = '<%= transactional_emails_opt_in_notice_dismissed %>';
+      var mailpoet_mss_key_invalid = <%= mss_key_invalid ? 'true' : 'false' %>;
 
       var has_mss_key_specified = <%= json_encode(has_mss_key_specified) %>;
       var MSS_pitch_illustration_url = '<%= cdn_url('welcome-wizard/illu-pitch-mss.20190912.png') %>';
@@ -52,12 +54,15 @@
       var mailpoet_editor_javascript_url = '<%= getJavascriptScriptUrl("newsletter_editor.js") %>';
       var mailpoet_subscribers_count = <%= subscriber_count %>;
       var mailpoet_newsletters_count = <%= newsletters_count %>;
+      var mailpoet_send_transactional_emails = <%= json_encode(settings.send_transactional_emails == '1') %>;
+      var settings = <%= json_encode(settings) %>;
 
       <% if not(premium_plugin_active) %>
         var mailpoet_free_premium_subscribers_limit = <%= free_premium_subscribers_limit %>;
       <% endif %>
     <% endautoescape %>
     var mailpoet_beacon_articles = ['57fdc312c697911f2d324fd7', '5a0257ac2c7d3a272c0d7ad6', '58f671152c7d3a057f8858e8'];
+    var mailpoet_mss_key_pending_approval = '<%= mss_key_pending_approval %>';
   </script>
 <% endblock %>
 
@@ -241,11 +246,16 @@
     'finalNewsletterStep': __('Final Step: Last Details'),
     'saveDraftAndClose': __('Save as draft and close'),
     'helpTooltipSendEmail': __('You cannot send the same email twice, as that would be considered spam. <br /> If you must send the same email more than one time, simply duplicate this email first.'),
+    'pendingKeyApprovalNotice': __('You’ll soon be able to send once our team reviews your account. In the meantime, you can send previews to [link]your authorized emails[/link].'),
     'orSimply': __('or simply'),
     'goBackToDesign': __('go back to the Design page'),
     'websiteTimeIs': __("Your website’s time is"),
     'noScheduledDateError': __('Please enter the scheduled date.'),
     'schedule': __('Schedule'),
+
+    'allSendingPausedHeader': __('All sending is currently paused!'),
+    'allSendingPausedBody': __('Your key to send with MailPoet is invalid.'),
+    'allSendingPausedLink': __('Purchase a key'),
 
     'close': __('Close'),
     'today': __('Today'),
@@ -316,6 +326,10 @@
     'backToPostNotifications': __('Back to Post notifications'),
     'noSubscribers': __('No subscribers!'),
 
+    'transactionalEmailNoticeTitle': __('Good news! MailPoet can now send your website’s emails too'),
+    'transactionalEmailNoticeBody': __('All of your WordPress and WooCommerce emails are sent with your hosting company, unless you have an SMTP plugin. Would you like such emails to be delivered with MailPoet’s active sending method for better deliverability?'),
+    'transactionalEmailNoticeBodyReadMore': _x('Read more.', 'This is a link that leads to more information about transactional emails'),
+    'transactionalEmailNoticeCTA': _x('Enable', 'Button, after clicking it we will enable transactional emails'),
     'mailerSendErrorNotice': __('Sending has been paused due to a technical issue with %$1s'),
     'mailerSendErrorCheckConfiguration': __('Please check your sending method configuration, you may need to consult with your hosting company.'),
     'mailerSendErrorUseSendingService': __('The easy alternative is to <b>send emails with MailPoet Sending Service</b> instead, like thousands of other users do.'),

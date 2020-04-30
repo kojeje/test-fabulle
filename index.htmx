@@ -1,60 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>Welcome!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="robots" content="noindex" />
-	<style type="text/css"><!--
-    body {
-        color: #444444;
-        background-color: #EEEEEE;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 80%;
-    }
-    h1 {}
-    h2 { font-size: 1.2em; }
-    #page{
-        background-color: #FFFFFF;
-        width: 60%;
-        margin: 24px auto;
-        padding: 12px;
-    }
-    #header{
-        padding: 6px ;
-        text-align: center;
-    }
-    .header{ background-color: #83A342; color: #FFFFFF; }
-    #content {
-        padding: 4px 0 24px 0;
-    }
-    #footer {
-        color: #666666;
-        background: #f9f9f9;
-        padding: 10px 20px;
-        border-top: 5px #efefef solid;
-        font-size: 0.8em;
-        text-align: center;
-    }
-    #footer a {
-        color: #999999;
-    }
-    --></style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+    <title>Fabulle & Cie - site en maintenance</title>
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab:100,200,300,400,500,600,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <!--Font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- feuille de style -->
+    <link rel="stylesheet" type="text/css"  href="style.css">
+
 </head>
-<body>
-    <div id="page">
-        <div id="header" class="header">
-            <h1>Welcome to <!--ADRESSE//-->your website!<!--ADRESSE//--></h1>
+<body class="body row">
+
+    <section class="cadre col-8">
+
+        <h1 class="maintenance-title">
+            <i class="fal fa-tools"></i>
+            <br>
+            Fabulle bricole !
+            <br>
+            Un petit moment svp....
+        </h1>
+        <div class="img">
+            <img src="https://test1.kojejecom.com/wp-content/uploads/2019/09/fabulle-bleue.png" alt="image de fabulle">
         </div>
-        <div id="content">
-            <h2>This is the default index page of your website.</h2>
-            <p>This file may be deleted or overwritten without any difficulty. This is produced by the file <b>index.html</b> in the <b>web</b> directory.</p>
-            <p>For questions or problems please contact <!--SUPPORT//-->support<!--SUPPORT//-->.</p>
-        </div>
-        <div id="footer">
-            <p>Powered by <a href="http://www.ispconfig.org">ISPConfig</a></p>
-        </div>
-    </div>
+        <p class="maintenance-text"> 
+            Quelques petits boulons à serrer
+        </p>
+        <p class="maintenance-text">
+            2 où 3 gouttes d'huile de coude, et nous pourrons de nouveau naviguer!
+        </p>
+        <h2 class="maintenance-h2">
+            Patience.... Maintenance...
+        </h2>
+        <p class="maintenance-text">
+            <a href="mailto:admin@kojeje.fr"> webmaster</a>
+        </p>
+    </section>
+    
 </body>
 </html>

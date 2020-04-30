@@ -138,11 +138,12 @@ class Pages {
 
   public function confirm() {
     $this->subscriber = $this->getSubscriber();
-    if ($this->subscriber === false || $this->subscriber->status === Subscriber::STATUS_SUBSCRIBED) {
+    if ($this->subscriber === false) {
       return false;
     }
 
     $subscriberData = $this->subscriber->getUnconfirmedData();
+    $originalStatus = $this->subscriber->status;
 
     $this->subscriber->status = Subscriber::STATUS_SUBSCRIBED;
     $this->subscriber->confirmedIp = Helpers::getIP();
@@ -151,24 +152,29 @@ class Pages {
     $this->subscriber->unconfirmedData = null;
     $this->subscriber->save();
 
-    if ($this->subscriber->getErrors() === false) {
-      // send welcome notification
-      $subscriberSegments = $this->subscriber->segments()->findMany();
-      if ($subscriberSegments) {
-        $this->welcomeScheduler->scheduleSubscriberWelcomeNotification(
-          $this->subscriber->id,
-          array_map(function ($segment) {
-            return $segment->get('id');
-          }, $subscriberSegments)
-        );
-      }
+    if ($this->subscriber->getErrors() !== false) {
+      return false;
+    }
 
+    // Schedule welcome emails
+    $subscriberSegments = $this->subscriber->segments()->findMany();
+    if ($subscriberSegments) {
+      $this->welcomeScheduler->scheduleSubscriberWelcomeNotification(
+        $this->subscriber->id,
+        array_map(function ($segment) {
+          return $segment->get('id');
+        }, $subscriberSegments)
+      );
+    }
+
+    // Send new subscriber notification only when status changes to subscribed to avoid spamming
+    if ($originalStatus !== Subscriber::STATUS_SUBSCRIBED) {
       $this->newSubscriberNotificationSender->send($this->subscriber, $subscriberSegments);
+    }
 
-      // update subscriber from stored data after confirmation
-      if (!empty($subscriberData)) {
-        Subscriber::createOrUpdate($subscriberData);
-      }
+    // Update subscriber from stored data after confirmation
+    if (!empty($subscriberData)) {
+      Subscriber::createOrUpdate($subscriberData);
     }
   }
 
@@ -250,6 +256,9 @@ class Pages {
 
   public function setWindowTitle($title, $separator, $separatorLocation = 'right') {
     $titleParts = explode(" $separator ", $title);
+    if (!is_array($titleParts)) {
+      return $title;
+    }
     if ($separatorLocation === 'right') {
       // first part
       $titleParts[0] = $this->setPageTitle($titleParts[0]);

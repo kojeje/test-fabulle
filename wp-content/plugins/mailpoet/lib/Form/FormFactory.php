@@ -17,20 +17,24 @@ class FormFactory {
           'id' => 'email',
           'name' => __('Email', 'mailpoet'),
           'type' => 'text',
-          'static' => true,
           'params' => [
             'label' => __('Email', 'mailpoet'),
             'required' => true,
             'label_within' => true,
+          ],
+          'styles' => [
+            'full_width' => true,
           ],
         ],
         [
           'id' => 'submit',
           'name' => __('Submit', 'mailpoet'),
           'type' => 'submit',
-          'static' => true,
           'params' => [
             'label' => __('Subscribe!', 'mailpoet'),
+          ],
+          'styles' => [
+            'full_width' => true,
           ],
         ],
       ],

@@ -281,7 +281,7 @@
                             </div>
                         </a>
                         {% for membre in membres %}
-                            {% if loop.index == loop.last %}
+                            {# {% if loop.index == loop.last %}
                                
                                 <div class="offset-2 offset-md-5"></div>
                                 <a  href="{{membre.link}}" class="col-8 m-a col-md-3 membre members row">
@@ -295,19 +295,19 @@
                                 </a>
                                 <div class="offset-2 d-md-none d-block"></div>
                                 
-                            {% else %}
+                            {% else %} #}
                                 <div class="offset-2  offset-md-1"></div>
                                 <a  href="{{membre.link}}" class="col-8 col-md-3 membre members row">
                                         <h3 class="col-8 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
-                                        {% include 'views/partial/popups/member-popup.twig' %}
-                                        <div class="col-12 mt30">
+                                        
+                                        <div class=" col-12 mt30">
                                             <img src="{{ membre.thumbnail.src }}" class="w-60" alt="Image de {{ membre.title}}">
                                             
                                         </div>
                                         <p class="lire">lire la suite</p>
                                 </a>
                                 <div class="offset-2 d-md-none d-block"></div>
-                            {% endif %}
+                            {# {% endif %} #}
                         {% endfor %}
                     {% endif %}
                 
@@ -315,7 +315,7 @@
                         <a id="article-old"></a>
                         <h1 class="t-lg-10 t9 active#ff6633 article-h1 under-title col-12">Ils sont passés par chez nous</h1>
                         {% for membre in oldmembres %}
-                            {% if loop.index == loop.last %}
+                            {# {% if loop.index == loop.last %}
                                 <div class="offset-2 offset-md-5"></div>
                                 <a  href="{{membre.link}}" class="col-8 m-a col-md-3 membre members row">
                                         <h3 class="col-12 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
@@ -328,7 +328,7 @@
                                 </a>
                                 <div class="offset-2 d-md-none d-block"></div>
                                 
-                            {% else %}
+                            {% else %} #}
                                 <div class="offset-2  offset-md-1"></div>
                                 <a  href="{{membre.link}}" class="col-8 col-md-3 membre members row">
                                         <h3 class="col-8 t-md-6 t-5 t-md-5">{{ membre.get_field('prenom') }} {{ membre.get_field('nom') }} </h3>
@@ -340,7 +340,7 @@
                                         <p class="lire">lire la suite</p>
                                 </a>
                                 <div class="offset-2 d-md-none d-block"></div>
-                            {% endif %}
+                            {# {% endif %} #}
                            
 
                         {% endfor %}

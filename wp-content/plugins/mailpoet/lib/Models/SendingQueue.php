@@ -62,6 +62,7 @@ class SendingQueue extends Model {
     if ($this->countProcessed === $this->countTotal) {
       return $this->complete();
     } else {
+      $this->newsletter()->findOne()->setStatus(Newsletter::STATUS_SENDING);
       return $this->task()->findOne()->resume();
     }
   }
@@ -75,13 +76,13 @@ class SendingQueue extends Model {
     if (!Helpers::isJson($this->newsletterRenderedBody) && !is_null($this->newsletterRenderedBody)) {
       $this->set(
         'newsletter_rendered_body',
-        json_encode($this->newsletterRenderedBody)
+        (string)json_encode($this->newsletterRenderedBody)
       );
     }
     if (!is_null($this->meta) && !Helpers::isJson($this->meta)) {
       $this->set(
         'meta',
-        json_encode($this->meta)
+        (string)json_encode($this->meta)
       );
     }
     parent::save();

@@ -7,6 +7,7 @@ if (!defined('ABSPATH')) exit;
 
 use MailPoet\AdminPages\PageRenderer;
 use MailPoet\Config\Menu;
+use MailPoet\Config\ServicesChecker;
 use MailPoet\Models\Subscriber;
 use MailPoet\Newsletter\Shortcodes\ShortcodesHelper;
 use MailPoet\Services\Bridge;
@@ -35,13 +36,17 @@ class NewsletterEditor {
   /** @var TransactionalEmails */
   private $wcTransactionalEmails;
 
+  /** @var ServicesChecker */
+  private $servicesChecker;
+
   public function __construct(
     PageRenderer $pageRenderer,
     SettingsController $settings,
     UserFlagsController $userFlags,
     WooCommerceHelper $woocommerceHelper,
     WPFunctions $wp,
-    TransactionalEmails $wcTransactionalEmails
+    TransactionalEmails $wcTransactionalEmails,
+    ServicesChecker $servicesChecker
   ) {
     $this->pageRenderer = $pageRenderer;
     $this->settings = $settings;
@@ -49,6 +54,7 @@ class NewsletterEditor {
     $this->woocommerceHelper = $woocommerceHelper;
     $this->wp = $wp;
     $this->wcTransactionalEmails = $wcTransactionalEmails;
+    $this->servicesChecker = $servicesChecker;
   }
 
   public function render() {
@@ -79,6 +85,7 @@ class NewsletterEditor {
       ];
       $woocommerceData = array_merge($wcEmailSettings, $woocommerceData);
     }
+
     $data = [
       'shortcodes' => ShortcodesHelper::getShortcodes(),
       'settings' => $this->settings->getAll(),
@@ -90,6 +97,7 @@ class NewsletterEditor {
       'is_wc_transactional_email' => $newsletterId === $woocommerceTemplateId,
       'site_name' => $this->wp->wpSpecialcharsDecode($this->wp->getOption('blogname'), ENT_QUOTES),
       'site_address' => $this->wp->wpParseUrl($this->wp->homeUrl(), PHP_URL_HOST),
+      'mss_key_pending_approval' => $this->servicesChecker->isMailPoetAPIKeyPendingApproval(),
     ];
     $this->wp->wpEnqueueMedia();
     $this->wp->wpEnqueueStyle('editor', $this->wp->includesUrl('css/editor.css'));

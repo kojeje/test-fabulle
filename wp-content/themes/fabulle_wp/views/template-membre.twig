@@ -16,28 +16,39 @@
                    <div class=" col-10 row">
                        <div class="col-3"> <img src="{{post.thumbnail.src}}" alt="affiche"></div>
 
-                       <div class="col-6 col-md-9 row">
+                       <div class="col-6 col-md-9">
                            <h1 class="col-md-6 col-12 article-h1 under-title link#ff66332">{{ post.get_field('prenom') }} {{ post.get_field('nom') }}</h1>
                            {% if post.get_field('nom_de_scene') %}
                                <h2 class="t-a-center">{{ post.get_field('nom_de_scene') }}</h2>
                            {% endif %}
-
+                            {# metiers #}
                            {% if 'comédien(ne)' in post.get_field('metiers')|join and  post.get_field('genre') == "femme"%}
                                <p class="col-md-6 col-12 t-a-center article-sub-h1">comédienne </p>
                            {% elseif 'comédien(ne)' in post.get_field('metiers')|join and  post.get_field('genre') == "homme"%}
                                <p class="t-a-center article-sub-h1">comédien</p>
-
-                           {% else %}
-                               <p class="col-md-6 col-12 t-a-center article-sub-h2">{{ post.get_field('metier')|join }}</p>
-                           {% endif %}
-                           {% if 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                            {% endif %}
+                            {% if 'chanteur(se)' in post.get_field('metiers')|join
                                and  post.get_field('genre') == "femme"%}
-                               <p class="col-12 t-a-center article-sub-h1">musicienne/chanteuse </p>
-                           {% elseif 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                               <p class="col-12 t-a-center article-sub-h1">chanteuse </p>
+                            {% elseif 'chanteur(se)' in post.get_field('metiers')|join
                                and  post.get_field('genre') == "homme"%}
-                               <p class="t-a-center article-sub-h1">musicien/chanteur </p>
+                               <p class="t-a-center article-sub-h1">chanteur </p>
+                            {% endif %}
+                            {% if 'musicien(ne)' in post.get_field('metiers')|join
+                               and  post.get_field('genre') == "femme"%}
+                               <p class="col-12 t-a-center article-sub-h1">musicienne </p>
+                            {% elseif 'musicien(ne)' in post.get_field('metiers')|join
+                               and  post.get_field('genre') == "homme"%}
+                               <p class="t-a-center article-sub-h1">musicien </p>
+                            {% endif %}
+                            {% if 'comédien malgré tout' in post.get_field('metiers')|join and  post.get_field('genre') == "homme"%}
+                               <p class="t-a-center article-sub-h1">Et un peu comédien quand même!</p>
+                            {% elseif 'comédien malgré tout' in post.get_field('metiers')|join and  post.get_field('genre') == "femme"%}
+                               <p class="t-a-center article-sub-h1">Et un peu comédienne quand même!</p>
+                           
                            {% endif %}
-                           {% if 'musicien(ne)/chanteur(se)' in post.get_field('metiers')|join
+                           
+                           {% if 'musicien(ne)' in post.get_field('metiers')|join
                                and post.get_field('instrument') %}
                                <p class="t-a-center"> {{ post.get_field('instrument') }}</p>
                            {% endif %}

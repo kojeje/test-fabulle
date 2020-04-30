@@ -663,6 +663,7 @@
 
     var mailpoet_site_name = '<%= site_name %>';
     var mailpoet_site_address = '<%= site_address %>';
+    var mailpoet_mss_key_pending_approval = '<%= mss_key_pending_approval %>';
 
     var config = {
       availableStyles: {
@@ -1462,7 +1463,6 @@
       },
       validation: {
         validateUnsubscribeLinkPresent: <%= mss_active and is_wc_transactional_email != true ? 'true' : 'false' %>,
-        validateSPFRecord: <%= mss_active ? 'true' : 'false' %>,
       },
       urls: {
         send: '<%= admin_url('admin.php?page=mailpoet-newsletters#/send/' ~ (params('id') | intval)) %>',

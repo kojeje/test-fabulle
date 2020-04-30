@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    width: 100% !important;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #000F28 !important;
+    color: white !important;
+}
+.cadre{
+    margin: auto;
+    border-radius: 50px;
+    border: 3px solid #ffb630;
+    color: #ffffff;
+    font-family: 'Comfortaa',cursive;
+    text-align: center;
+    padding: 5%;
+    line-height: 3;
+    margin-top: 10vh;;
+}
+.maintenance-h2{
+    color: #ffb630;
+}
+
+.img{
+    margin: auto;
+    width: 20%;
+
+}
+.img img{
+    width: 100%;
+}
+.fal{
+    color: #ffb630;
+}

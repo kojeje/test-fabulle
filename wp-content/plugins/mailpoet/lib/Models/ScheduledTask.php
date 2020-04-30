@@ -82,7 +82,7 @@ class ScheduledTask extends Model {
       'WHERE ' .
       'q.`newsletter_id` = ' . $newsletter->id() .
       ' AND t.`status` = "' . self::STATUS_PAUSED . '" ' .
-      ' AND t.`scheduled_at` > NOW()'
+      ' AND t.`scheduled_at` > CURDATE() - INTERVAL 30 DAY'
     );
   }
 
@@ -101,7 +101,7 @@ class ScheduledTask extends Model {
     if (!is_null($this->meta) && !Helpers::isJson($this->meta)) {
       $this->set(
         'meta',
-        json_encode($this->meta)
+        (string)json_encode($this->meta)
       );
     }
     parent::save();

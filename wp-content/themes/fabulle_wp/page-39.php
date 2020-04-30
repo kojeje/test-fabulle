@@ -46,10 +46,19 @@
   ];
   $args_membres = [
     'post_type' => 'membres',
-    'meta_key' => 'statut',
-    'meta_value'=>'actuel',
+  'meta_query' => [
+    [
+      'relation' => 'AND',
+      'key' => 'statut',
+      'value' => 'actuel',
+      'compare' => 'LIKE'
+   ],
+  ],
+    'meta_key' => 'priorite',
     'orderby' => 'priorite',
-    'order'=>'ASC',
+    'order' => 'ASC',
+ 
+  
 
 
   ];

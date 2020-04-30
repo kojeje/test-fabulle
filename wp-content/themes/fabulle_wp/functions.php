@@ -89,8 +89,7 @@ add_theme_support( 'post-thumbnails' );
 ////  }
 //  add_action('admin_menu', 'remove_menu_items');
   function remove_menus(){
-
-    remove_menu_page( 'index.php' );                  //Dashboard
+//   remove_menu_page( 'index.php' );                  //Dashboard
     remove_menu_page( 'edit.php' );                   //Posts
 //    remove_menu_page( 'upload.php' );                 //Media
 //    remove_menu_page( 'edit.php?post_type=page' );    //Pages

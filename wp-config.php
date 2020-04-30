@@ -83,6 +83,9 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', true);
+define('WP_DEBUG_DISPLAY', true);
+// desactive l'édition de fichier
+define('DISALLOW_FILE_EDIT', true);
 
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 

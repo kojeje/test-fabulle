@@ -3,7 +3,7 @@ Contributors: mailpoet, wysija
 Tags: email, email marketing, post notification, woocommerce emails, email automation, newsletter, newsletter builder, newsletter subscribers
 Requires at least: 4.7
 Tested up to: 5.3
-Stable tag: 3.46.6
+Stable tag: 3.46.12
 Requires PHP: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -183,6 +183,44 @@ Check our [Knowledge Base](https://kb.mailpoet.com) or contact us through our [s
 6. WooCommerce emails
 
 == Changelog ==
+
+= 3.46.12 - 2020-04-27 =
+* Added: congrats email received when you successfully applied an API key;
+* Added: slide-in form type is now available;
+* Improved: form previews now use your site's theme;
+* Improved: segments are moved to lists page;
+* Fixed: form custom fields now render correctly in multiple columns. Thanks Ryan!
+
+= 3.46.11 - 2020-04-21 =
+* Added: fixed bar form type is now available;
+* Fixed: no more false alarms reported by some anti-viruses;
+* Fixed: the "Send a test email" button is now working again;
+* Fixed: iframes in 3rd party plugins (including Divi, Elementor, and others) are no longer broken.
+
+= 3.46.10 - 2020-04-15 =
+* Fixed: sending multiple stats emails.
+
+= 3.46.9 - 2020-04-14 =
+* Added: new image block in Form Editor;
+* Fixed: newsletter listings is a bit faster now;
+* Fixed: default list is no longer required when List selection added to form;
+* Fixed: last_name block is no longer required by default in Form Editor;
+* Fixed: renamed List is also renamed in Form Editor;
+* Fixed: missing name for custom checkbox in Form Editor.
+
+= 3.46.8 - 2020-04-07 =
+* Improved: email authorization proposed on key activation plugin;
+* Improved: double opt-in is used for the "Subscribe on Checkout" WooCommerce feature;
+* Fixed: list selection autocomplete in subscriber import. Thanks, Matthias!
+* New: pop up form type is now available;
+* All tasks are now unpaused after welcome email reactivation. Thanks Natee!
+
+= 3.46.7 - 2020-03-31 =
+* Added: new button styles in the form editor;
+* Fixed: badges in newsletter listings are now displayed correctly;
+* Fixed: customised WooCommerce template may cause error;
+* Fixed: UI issue with mobile preview in form editor;
+* Fixed: archive links work for all logged-in users now.
 
 = 3.46.6 - 2020-03-24 =
 * Added: support for custom css classes in the form editor;

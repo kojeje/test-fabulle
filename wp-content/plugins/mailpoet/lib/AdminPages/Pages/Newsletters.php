@@ -9,6 +9,7 @@ use MailPoet\AdminPages\PageRenderer;
 use MailPoet\Config\Env;
 use MailPoet\Config\Installer;
 use MailPoet\Config\Menu;
+use MailPoet\Config\ServicesChecker;
 use MailPoet\Features\FeaturesController;
 use MailPoet\Listing\PageLimit;
 use MailPoet\Models\Newsletter;
@@ -53,6 +54,9 @@ class Newsletters {
   /** @var SubscribersFeature */
   private $subscribersFeature;
 
+  /** @var ServicesChecker */
+  private $servicesChecker;
+
   public function __construct(
     PageRenderer $pageRenderer,
     PageLimit $listingPageLimit,
@@ -62,7 +66,8 @@ class Newsletters {
     WooCommerceHelper $woocommerceHelper,
     Installation $installation,
     FeaturesController $featuresController,
-    SubscribersFeature $subscribersFeature
+    SubscribersFeature $subscribersFeature,
+    ServicesChecker $servicesChecker
   ) {
     $this->pageRenderer = $pageRenderer;
     $this->listingPageLimit = $listingPageLimit;
@@ -73,6 +78,7 @@ class Newsletters {
     $this->installation = $installation;
     $this->featuresController = $featuresController;
     $this->subscribersFeature = $subscribersFeature;
+    $this->servicesChecker = $servicesChecker;
   }
 
   public function render() {
@@ -99,6 +105,7 @@ class Newsletters {
     $data['settings'] = $this->settings->getAll();
     $data['mss_active'] = Bridge::isMPSendingServiceEnabled();
     $data['has_mss_key_specified'] = Bridge::isMSSKeySpecified();
+    $data['mss_key_pending_approval'] = $this->servicesChecker->isMailPoetAPIKeyPendingApproval();
     $data['current_wp_user'] = $this->wp->wpGetCurrentUser()->to_array();
     $data['current_wp_user_firstname'] = $this->wp->wpGetCurrentUser()->user_firstname;
     $data['site_url'] = $this->wp->siteUrl();
@@ -129,6 +136,7 @@ class Newsletters {
     $data['subscriber_count'] = Subscriber::getTotalSubscribers();
     $data['newsletters_count'] = Newsletter::count();
     $data['mailpoet_feature_flags'] = $this->featuresController->getAllFlags();
+    $data['transactional_emails_opt_in_notice_dismissed'] = $this->userFlags->get('transactional_emails_opt_in_notice_dismissed');
 
     if (!$data['premium_plugin_active']) {
       $data['free_premium_subscribers_limit'] = License::FREE_PREMIUM_SUBSCRIBERS_LIMIT;
@@ -141,6 +149,7 @@ class Newsletters {
       $lastAnnouncementSeen < $lastAnnouncementDate
     );
     $data['last_announcement_seen'] = $lastAnnouncementSeen;
+    $data['mss_key_invalid'] = ($this->servicesChecker->isMailPoetAPIKeyValid() === false);
 
     $data['automatic_emails'] = [
       [
